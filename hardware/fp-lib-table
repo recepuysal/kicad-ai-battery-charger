@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "BatteryCharger") (type "KiCad") (uri "${KIPRJMOD}/lib/BatteryCharger.pretty") (options "") (descr "Bu projede kullanilan LCSC footprintleri"))
+)
