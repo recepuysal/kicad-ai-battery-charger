@@ -39,7 +39,8 @@ The schematic notes are written in Turkish.
 | **On/off** | Slide switch drives a P-MOSFET load switch, so the switch carries no load current |
 | **5 V output** | MT3608 boost, **up to 1 A**, stays at 5 V down to a 3.0 V battery |
 | **3.3 V output** | AP2112K LDO fed from 5 V, stays at 3.3 V for the whole battery range |
-| **Telemetry** | Charge state, USB present, battery voltage (switched divider), battery temperature |
+| **Fuel gauge** | MAX17048 over I²C: state of charge (%), cell voltage, charge/discharge rate |
+| **Telemetry** | Charge state, USB present, battery temperature |
 
 ## Blocks
 
@@ -49,7 +50,7 @@ The schematic notes are written in Turkish.
 4. Power path + load switch
 5. 5 V boost (MT3608)
 6. 3.3 V LDO (AP2112K)
-7. Battery voltage measurement
+7. Fuel gauge (MAX17048)
 8. MCU connector
 9. Test points + mounting holes
 10. Battery temperature (NTC)
@@ -62,8 +63,8 @@ The schematic notes are written in Turkish.
 | 2 | +3V3 | 3.3 V output (LDO) |
 | 3 | ~CHRG | Charge status, see table below |
 | 4 | ~STDBY | Charge status, see table below |
-| 5 | BAT_SENSE | Analog, VBAT / 2 (valid while BAT_EN = 1) |
-| 6 | BAT_EN | High = enable battery measurement (divider is off otherwise, no battery drain) |
+| 5 | SDA | I²C data, MAX17048 at address 0x36 (4.7 k pull-up to 3.3 V on board) |
+| 6 | SCL | I²C clock |
 | 7 | BAT_TEMP | Analog, 0.6 × NTC node voltage (valid while USB is plugged in) |
 | 8 | GND | |
 
@@ -100,6 +101,13 @@ The design targets packs with their own protection circuit, so the on-board prot
   must allow **≥ 2.5 A continuous discharge**.
 - The TP4056 dissipates ~1.3 W at 1 A, so give it a generous copper pour with thermal vias.
 - To change the charge current, change R9 (PROG): 1.2 k ≈ 1 A, 2 k ≈ 580 mA, 3 k ≈ 400 mA.
+- The MAX17048 runs from the battery all the time (~3 µA). With the power switch off the I²C
+  pull-ups lose power, the bus sits low and the gauge enters sleep after 2.5 s (~0.5 µA). It does
+  not track charge while asleep, so after charging with the switch off the reported % catches up
+  over the next minutes.
+- Do not enable the MCU's internal pull-ups on ~CHRG / ~STDBY; the board already has them.
+- Firmware should shut the system down at about 3.3 V cell voltage (read from the MAX17048). The
+  battery's own cutoff is much lower and repeated deep discharge ages the cell.
 
 ## Repository layout
 

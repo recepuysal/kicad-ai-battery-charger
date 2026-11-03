@@ -36,7 +36,8 @@ Devre önce EasyEDA'da elle çizildi. Ardından bir yapay zekâ asistanı
 | **Aç/kapa** | Sürgü anahtar bir P-MOSFET yük anahtarını sürer; anahtardan yük akımı geçmez |
 | **5 V çıkış** | MT3608 boost, **1 A'e kadar**, pil 3.0 V'a inse de 5 V kalır |
 | **3.3 V çıkış** | 5 V'tan beslenen AP2112K LDO, pilin tüm aralığında 3.3 V kalır |
-| **Telemetri** | Şarj durumu, USB takılı mı, pil voltajı (anahtarlı bölücü), pil sıcaklığı |
+| **Pil göstergesi** | I²C üzerinden MAX17048: doluluk (%), hücre voltajı, şarj/deşarj hızı |
+| **Telemetri** | Şarj durumu, USB takılı mı, pil sıcaklığı |
 
 ## Bloklar
 
@@ -46,7 +47,7 @@ Devre önce EasyEDA'da elle çizildi. Ardından bir yapay zekâ asistanı
 4. Güç yolu + yük anahtarı
 5. 5 V boost (MT3608)
 6. 3.3 V LDO (AP2112K)
-7. Pil gerilimi ölçümü
+7. Pil göstergesi (MAX17048)
 8. İşlemci konnektörü
 9. Test noktaları + montaj delikleri
 10. Pil sıcaklığı (NTC)
@@ -59,8 +60,8 @@ Devre önce EasyEDA'da elle çizildi. Ardından bir yapay zekâ asistanı
 | 2 | +3V3 | 3.3 V çıkış (LDO) |
 | 3 | ~CHRG | Şarj durumu, aşağıdaki tabloya bakın |
 | 4 | ~STDBY | Şarj durumu, aşağıdaki tabloya bakın |
-| 5 | BAT_SENSE | Analog, VBAT / 2 (BAT_EN = 1 iken geçerli) |
-| 6 | BAT_EN | Yüksek = pil ölçümünü aç (kapalıyken bölücü akım çekmez) |
+| 5 | SDA | I²C veri, MAX17048 adresi 0x36 (kartta 3.3 V'a 4.7 k çekme) |
+| 6 | SCL | I²C saat |
 | 7 | BAT_TEMP | Analog, 0.6 × NTC gerilimi (USB takılıyken geçerli) |
 | 8 | GND | |
 
@@ -97,6 +98,13 @@ Tasarım kendi koruma devresi olan (devreli) piller için yapıldı. Kart üstü
   **≥ 2.5 A sürekli deşarja** izin vermelidir.
 - TP4056 1 A'de ~1.3 W ısı yayar; altına geniş bakır alan ve ısı viaları koyun.
 - Şarj akımını değiştirmek için R9 (PROG) değiştirilir: 1.2 k ≈ 1 A, 2 k ≈ 580 mA, 3 k ≈ 400 mA.
+- MAX17048 sürekli pilden beslenir (~3 µA). Güç anahtarı kapalıyken I²C çekme dirençlerinin
+  beslemesi kesilir, hat 0'da kalır ve entegre 2.5 s sonra uykuya geçer (~0.5 µA). Uykudayken
+  şarjı takip etmez; anahtar kapalıyken şarj edildiyse yüzde değeri açıldıktan sonraki
+  dakikalarda kendini düzeltir.
+- ~CHRG / ~STDBY için işlemcinin dahili çekme dirençlerini açmayın; kartta zaten var.
+- Yazılım, hücre gerilimi ~3.3 V'a düştüğünde (MAX17048'den okunur) sistemi kapatmalıdır. Pilin
+  kendi kesmesi çok daha düşüktür ve sık derin deşarj pili yıpratır.
 
 ## Klasör yapısı
 

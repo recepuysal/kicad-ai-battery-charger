@@ -66,6 +66,20 @@ for f in fp_names:
     t = re.sub(r'\(model "([^"]+)"', fix, t)
     open(os.path.join(dst_pretty, f + ".kicad_mod"), "w", encoding="utf-8", newline="\n").write(t)
 
+# eski dosyalari temizle (artik kullanilmayan footprint / 3B)
+keep_fp = {f + ".kicad_mod" for f in fp_names}
+for f in os.listdir(dst_pretty):
+    if f not in keep_fp:
+        os.remove(os.path.join(dst_pretty, f))
+keep_3d = set()
+for f in fp_names:
+    for m in re.findall(r'3dshapes/([^"]+)"', open(os.path.join(dst_pretty, f + ".kicad_mod"), encoding="utf-8").read()):
+        stem = os.path.splitext(m)[0]
+        keep_3d |= {stem + ".wrl", stem + ".step"}
+for f in os.listdir(dst_3d):
+    if f not in keep_3d:
+        os.remove(os.path.join(dst_3d, f))
+
 # 4) proje kutuphane tablolari
 open(os.path.join(HW, "sym-lib-table"), "w", encoding="utf-8", newline="\n").write(
     '(sym_lib_table\n\t(version 7)\n\t(lib (name "%s") (type "KiCad") (uri "${KIPRJMOD}/lib/%s.kicad_sym") '

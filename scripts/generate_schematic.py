@@ -218,37 +218,33 @@ t, b = vpart(C100N, "C14", 350.52, ny, "100nF"); P("GND", b)
 L((360.68, ny, 180), "BAT_TEMP", 0)
 S.note("NTC pil içinde (10k B3435), diğer ucu BAT−\nTP4056: 0–45 °C dışında şarjı durdurur\nBAT_TEMP = 0.6 × V_NTC (yalnızca USB takılıyken)", 279.4, 180.34)
 
-# =================================================================== 7 PIL OLCUM
-S.block("7 · PİL GERİLİMİ ÖLÇÜMÜ", 15.24, 195.58, 139.7, 279.4)
-top = 210.82
-L((30.48, top, 0), "BAT+", 0)
-Q4 = S.place("LCSC:AO3401A", "Q4", 50.8, 220.98, "AO3401A", mirror="x",
-             fields={"Reference": (5.08, -1.27, "left"), "Value": (5.08, 1.27, "left")})
-sx = Q4["2"][0]
-W((30.48, top), (sx, top), Q4["2"])
-J(40.64, top)
-t, b = vpart(R100K, "R13", 40.64, top, "100k")
-W(Q4["1"], b)
-Q2 = S.place("LCSC:PJA3406-AU-R1-000A1", "Q2", 39.37, 238.76, "PJA3406",
-             fields={"Reference": (5.08, -1.27, "left"), "Value": (5.08, 1.27, "left")})
-W(b, Q2["3"])
-J(*b[:2])
-P("GND", Q2["2"])
-W(Q2["1"], (25.4, Q2["1"][1]))
-J(30.48, Q2["1"][1])
-L((25.4, Q2["1"][1], 0), "BAT_EN", 0)
-t, b = vpart(R100K, "R14", 30.48, Q2["1"][1], "100k"); P("GND", b)
-t, b = vpart(R10K, "R10", sx, Q4["3"][1], "10k")
-W(Q4["3"], t)
-mid = b[1] + 2.54
-t2, b2 = vpart(R10K, "R12", sx, mid + 2.54, "10k")
-W(b, t2)
-P("GND", b2)
-W((sx, mid), (81.28, mid))
-J(sx, mid); J(68.58, mid)
-t, b = vpart(C100N, "C13", 68.58, mid, "100nF"); P("GND", b)
-L((81.28, mid, 180), "BAT_SENSE", 0)
-S.note("BAT_EN = 1 → Q2 iletir, Q4 açılır, ölçüm yapılır\nBAT_EN = 0 → bölücü kapalı (pil boşalmaz)\nBAT_SENSE = VBAT / 2  (4.2 V → 2.1 V)", 20.32, 260.35)
+# =================================================================== 7 PIL GOSTERGESI
+S.block("7 · PİL GÖSTERGESİ (MAX17048, I²C)", 15.24, 195.58, 139.7, 279.4)
+U3 = S.place("LCSC:MAX17048G+T10", "U3", 76.2, 231.14, "MAX17048",
+             fields={"Reference": (0, -10.16, None), "Value": (0, 10.16, None)})
+P("GND", U3["1"])                                   # CTG
+cy = U3["2"][1]
+W(U3["2"], (40.64, cy))                             # CELL
+W(U3["3"], (55.88, U3["3"][1]), (55.88, cy))        # VDD
+J(55.88, cy); J(45.72, cy)
+t, b = vpart("CL10A105KB8NNNC", "C15", 45.72, cy, "1uF"); P("GND", b)
+L((40.64, cy, 0), "BAT+", 0)
+P("GND", U3["4"])
+P("GND", U3["9"])                                   # EP
+P("GND", U3["6"])                                   # QSTRT
+NC(U3["5"])                                         # ALRT
+sda, scl = U3["8"][1], U3["7"][1]
+W(U3["8"], (104.14, sda))
+W(U3["7"], (121.92, scl))
+J(101.6, sda); J(116.84, scl)
+t, b = vpart("0603WAF4701T5E", "R22", 101.6, sda - 10.16, "4.7k"); P("+3V3", t)
+t, b = vpart("0603WAF4701T5E", "R23", 116.84, scl - 10.16, "4.7k"); P("+3V3", t)
+L((104.14, sda, 180), "SDA", 0)
+L((121.92, scl, 180), "SCL", 0)
+S.note("MAX17048 (I²C adresi 0x36): pil yüzdesi, voltaj, şarj/deşarj hızı\n"
+       "Pilden sürekli beslenir (hibernate ~3 µA).\n"
+       "Anahtar kapalıyken SDA/SCL 0 olur → 2.5 s sonra uyku (~0.5 µA).\n"
+       "ALRT kullanılmıyor (düşük pil uyarısı yazılımla okunur).", 20.32, 252.73)
 
 # =================================================================== 8 MCU KONNEKTORU
 S.block("8 · İŞLEMCİ KONNEKTÖRÜ", 144.78, 195.58, 269.24, 279.4)
@@ -259,7 +255,7 @@ F1 = S.place("LCSC:FSMD100-2920-R", "F1", 179.07, J1["1"][1], "1.1A PTC",
 W(J1["1"], F1["1"])
 P("+5V", F1["2"])
 P("+3V3", J1["2"])
-for pin, net in (("3", "~{CHRG}"), ("4", "~{STDBY}"), ("5", "BAT_SENSE"), ("6", "BAT_EN"), ("7", "BAT_TEMP")):
+for pin, net in (("3", "~{CHRG}"), ("4", "~{STDBY}"), ("5", "SDA"), ("6", "SCL"), ("7", "BAT_TEMP")):
     L(J1[pin], net, 12.7)
 P("GND", J1["8"], 2.54)
 # ~CHRG / ~STDBY cekmeleri USB'den: USB yokken ikisi de 0 okunur (USB yok bilgisi)
@@ -274,7 +270,7 @@ for rt, rb, x, net in (("R6", "R16", 228.6, "~{CHRG}"), ("R11", "R17", 246.38, "
     P("GND", b2)
 S.note("1  +5V        5 V çıkış (boost, F1 1.1 A PTC)\n2  +3V3       3.3 V çıkış (LDO)\n"
        "3  CHRG       açık-drain durum\n4  STDBY      açık-drain durum\n"
-       "5  BAT_SENSE  analog, VBAT/2\n6  BAT_EN     yüksek = ölçümü aç\n"
+       "5  SDA        I²C veri (MAX17048, 4.7k çekme)\n6  SCL        I²C saat\n"
        "7  BAT_TEMP   analog, pil sıcaklığı\n8  GND", 218.44, 200.66)
 S.note("CHRG STDBY  durum\n  0     0    USB yok (pilden çalışıyor)\n  0     1    şarj oluyor\n"
        "  1     0    şarj tamam\n  1     1    USB var, pil yok / sıcaklık hatası\n"
@@ -314,7 +310,7 @@ os.makedirs(OUT, exist_ok=True)
 S.save(os.path.join(OUT, NAME + ".kicad_sch"), [
     ("title", "Li-ion Güç Modülü (USB-C şarj, koruma, 5 V / 3.3 V)"),
     ("date", "2026-11-03"), ("rev", "1.0"),
-    ("comment1", "TP4056 şarj · DW01A+FS8205A koruma · MT3608 5 V · AP2112K 3.3 V"),
+    ("comment1", "TP4056 şarj · MT3608 5 V · AP2112K 3.3 V · MAX17048 pil göstergesi · opsiyonel DW01A koruma"),
     ("comment2", "EasyEDA çiziminden aktarıldı")])
 pro = os.path.join(OUT, NAME + ".kicad_pro")
 if not os.path.exists(pro):
