@@ -2,7 +2,7 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "81a2ecc2-9de8-416c-994c-a6ec0442bc68")
+	(uuid "1f71121e-e061-4750-970f-3bcb35e8f893")
 	(paper "A3")
 	(title_block
 		(title "Li-ion Güç Modülü (USB-C şarj, koruma, 5 V / 3.3 V)")
@@ -2458,6 +2458,160 @@
 				)
 			)
 			(symbol "0603WAF1000T5E_0_1"
+				(rectangle
+					(start -2.54 1.02)
+					(end 2.54 -1.02)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BatteryCharger:0603WAF0000T5E"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "0R"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "BatteryCharger:R0603"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_0R-0R0-1_C21189.html"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "0Ω (0R0) ±1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "UNI-ROYAL"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0603WAF0000T5E"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C21189"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Resistors"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "0603WAF0000T5E_0_1"
 				(rectangle
 					(start -2.54 1.02)
 					(end 2.54 -1.02)
@@ -5990,6 +6144,162 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "BatteryCharger:FSMD100-2920-R"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "FSMD100-2920-R"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "BatteryCharger:F2920"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C6044766.pdf"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Polymeric PTC Resettable Fuse 33V 1.1A Surface Mount 2920"
+				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "FUZETEC"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "FSMD100-2920-R"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C6044766"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FSMD100-2920-R_0_1"
+				(rectangle
+					(start -2.54 1.02)
+					(end 2.54 -1.02)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0)
+						(xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "BatteryCharger:0603WAF1502T5E"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6608,7 +6918,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "5a35ead1-883d-4cae-a6c9-46876175b763")
+		(uuid "a5c7469a-5187-40d5-aae1-768eaaf7c2d2")
 	)
 	(text "1 · USB-C GİRİŞ + ESD"
 		(exclude_from_sim no)
@@ -6621,7 +6931,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "db886f00-2a8d-4e14-b07c-b884f352b6fe")
+		(uuid "e3a266a7-f289-4c9e-8af7-05876f9b041f")
 	)
 	(symbol
 		(lib_id "BatteryCharger:TYPE-C6P")
@@ -6632,7 +6942,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c5f234a4-e246-473d-80e1-abb783f99971")
+		(uuid "9f200b0a-3939-438c-acac-cb5809ebb311")
 		(property "Reference" "USB1"
 			(at 40.64 48.26 0)
 			(show_name no)
@@ -6720,29 +7030,29 @@
 			)
 		)
 		(pin "7"
-			(uuid "b8a57f53-b118-49d3-bf6e-2205c8cc0748")
+			(uuid "2f56d978-0aba-44c5-96e5-ac5f47d38659")
 		)
 		(pin "A5"
-			(uuid "2b9a2c33-d16f-4543-9bcf-e91204fb0f77")
+			(uuid "c65b5a06-8069-43ec-853d-18d6945a2fbb")
 		)
 		(pin "A9"
-			(uuid "728537f7-6232-4553-9668-b40cfd44fa0a")
+			(uuid "31b9a13c-747a-486b-9774-7867bee62c15")
 		)
 		(pin "A12"
-			(uuid "08e39cff-0255-4f4e-9406-8ff3e2d15a0d")
+			(uuid "ae9ac3f7-bb0e-42f7-998f-84a131badf73")
 		)
 		(pin "B5"
-			(uuid "389c4b82-2451-43ba-a742-79beb13bafc6")
+			(uuid "821899c7-8586-4d9b-90b4-94f7f75e1938")
 		)
 		(pin "B9"
-			(uuid "8690afe7-19df-4383-bea8-cf4c6814f7d5")
+			(uuid "0eacc3cc-0f27-489a-adc7-97c7ea7d8b10")
 		)
 		(pin "B12"
-			(uuid "f91601d3-0f05-43d6-b910-030142c95a42")
+			(uuid "65f2a403-9af1-44f0-978b-784b014e3631")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "USB1")
 					(unit 1)
 				)
@@ -6758,7 +7068,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0cbf8c83-2362-49c1-b686-e235a78d721d")
+		(uuid "021c63ea-bb96-4dfe-89d4-e2818b9746ab")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6768,7 +7078,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "3484c4bf-ff89-4407-ae18-df5ace28068f")
+		(uuid "53b68bd9-e161-4011-a2ee-0921c4b2026b")
 		(property "Reference" "#PWR01"
 			(at 62.23 54.61 90)
 			(show_name no)
@@ -6825,11 +7135,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "c83bc5ab-acaf-475c-97f9-13d3e0654ccc")
+			(uuid "d9865c88-5bd1-4866-8685-63b0b52d5b4a")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR01")
 					(unit 1)
 				)
@@ -6845,7 +7155,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f5c0f0b7-04ee-4e7a-8fcc-441a4f49a9ba")
+		(uuid "8cc80871-df8a-4856-862c-c36f7481211f")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6855,7 +7165,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "0bfd4560-22d9-4f98-b8e4-8ec79ad5e13b")
+		(uuid "fd3fbb60-c17a-4ddd-9f07-e771ba8f3c85")
 		(property "Reference" "#PWR02"
 			(at 62.23 67.31 90)
 			(show_name no)
@@ -6912,11 +7222,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "da9d31a9-c2f7-4431-b1b8-cee87deb71d2")
+			(uuid "6da41db4-da69-4813-acce-33f82ce83350")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR02")
 					(unit 1)
 				)
@@ -6932,7 +7242,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "66b39048-2c42-43ff-8fd5-8a9a228ed2a1")
+		(uuid "11d43ab7-3a27-480e-bb31-f4022bcc05a4")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6942,7 +7252,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "638c8679-e443-43e3-8b10-e5470d5ac064")
+		(uuid "2df6ef07-b6cc-4235-b917-23123492248f")
 		(property "Reference" "#PWR03"
 			(at 19.05 59.69 90)
 			(show_name no)
@@ -6999,11 +7309,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "3619485c-51e9-456d-86eb-040e600f74b3")
+			(uuid "a0a2c965-6812-41ac-ac22-5144384eea97")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR03")
 					(unit 1)
 				)
@@ -7019,7 +7329,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "244740dd-465c-4bec-b0f0-d9d6196cda8b")
+		(uuid "8e7b3c30-4f80-406a-8d29-2a53871610aa")
 	)
 	(wire
 		(pts
@@ -7030,7 +7340,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a377c72f-2fd4-4fc9-8539-83a0c4ccd86b")
+		(uuid "fcfb7a48-d205-4746-ad7d-eb3dabf09882")
 	)
 	(wire
 		(pts
@@ -7041,13 +7351,13 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0775a848-5a24-466f-9ff0-5943463487d5")
+		(uuid "786f8670-0206-46db-a5b0-b496aa9e6e80")
 	)
 	(junction
 		(at 66.04 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "50c12df7-83a5-44da-9f23-24e23e1c2964")
+		(uuid "44ae0f6d-7640-49b2-97a7-1bd75233c1ae")
 	)
 	(wire
 		(pts
@@ -7058,7 +7368,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0c4cfcb4-cf33-44ca-8325-ac66607bb7d3")
+		(uuid "4eb6b0d9-c431-4cd7-bbb3-29c1da64b2a8")
 	)
 	(label "CC1"
 		(at 55.88 59.69 0)
@@ -7068,7 +7378,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "2adb6a3c-58c0-43a0-9bc5-0f3c3c7b1233")
+		(uuid "47d5b618-e652-4284-969e-9766784e129e")
 	)
 	(wire
 		(pts
@@ -7079,7 +7389,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "51be6417-9bc3-4907-8f49-eeccacddbce5")
+		(uuid "d4bd6379-43f2-4b63-a1f8-d7c99f8a5c13")
 	)
 	(label "CC2"
 		(at 55.88 62.23 0)
@@ -7089,7 +7399,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "58ef7a63-e483-4d1a-b775-c5c134291528")
+		(uuid "17bb4915-44df-42ee-9f1a-095b5add81f4")
 	)
 	(symbol
 		(lib_id "BatteryCharger:ESDA7P120-1U1M")
@@ -7099,7 +7409,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4cf9cce8-68d3-4496-b3b4-240ef34499fb")
+		(uuid "866572bf-b6b2-4322-be5b-4b75a3721d49")
 		(property "Reference" "D3"
 			(at 81.28 60.96 90)
 			(show_name no)
@@ -7189,14 +7499,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "c8adb2b0-b7a7-4d05-b480-23b0d26e9834")
+			(uuid "27a9f4e3-9ef1-4a24-8168-740f8c0e3006")
 		)
 		(pin "2"
-			(uuid "e12db0bf-69f1-4bf1-a570-c6e410771561")
+			(uuid "b74fe26b-4d10-49b4-97d0-5c2e72a941c7")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "D3")
 					(unit 1)
 				)
@@ -7207,7 +7517,7 @@
 		(at 78.74 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ac27eee3-640e-4b45-891c-904addb19f5d")
+		(uuid "dbae0ffa-e693-421f-804f-a350a2f59b7b")
 	)
 	(wire
 		(pts
@@ -7218,7 +7528,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "78eb09a1-d9ec-4eba-a0cc-dd1639536968")
+		(uuid "1b7cec50-18c6-4053-8795-17b2d626a830")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7228,7 +7538,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "20a6e06e-6c88-4d71-871d-65a52df5b23b")
+		(uuid "d23abe6d-8b30-43ba-a1ed-e56463f6a279")
 		(property "Reference" "#PWR04"
 			(at 78.74 76.2 0)
 			(show_name no)
@@ -7284,11 +7594,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "6146132f-a79d-4a0e-a652-95f3e962f1e8")
+			(uuid "dbe04074-7efd-4e8f-bdb2-813777983b81")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR04")
 					(unit 1)
 				)
@@ -7303,7 +7613,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "8684ea68-3a43-46d3-8c65-ecfcff496876")
+		(uuid "aba9ca72-3525-4bc9-b86b-01fa912ac14f")
 		(property "Reference" "#PWR05"
 			(at 91.44 60.96 0)
 			(show_name no)
@@ -7359,11 +7669,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "6c6882dc-cd89-4d89-80f1-c76541ed9e94")
+			(uuid "57b51a4f-9576-420c-9f1e-36db3510e805")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR05")
 					(unit 1)
 				)
@@ -7378,7 +7688,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b8519674-6bed-42c3-87f4-9e3f96e82293")
+		(uuid "01868c66-db8a-4975-ac26-5213c0b4efcd")
 		(property "Reference" "R3"
 			(at 35.56 83.82 90)
 			(show_name no)
@@ -7468,14 +7778,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "11dc7c10-c61a-483d-bbe1-0f63c83f86a3")
+			(uuid "10f25758-ed01-42a8-8c24-870539bd62da")
 		)
 		(pin "2"
-			(uuid "99fc15b8-c45f-4fe0-818a-9adb26ea8630")
+			(uuid "dab0c34e-8bec-4aa7-8cba-f7edca169199")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R3")
 					(unit 1)
 				)
@@ -7491,7 +7801,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8d5eadde-f45c-4d91-8303-e209ebf5886b")
+		(uuid "ebeff163-abde-4676-910e-a295cf6fc320")
 	)
 	(label "CC1"
 		(at 33.02 77.47 0)
@@ -7501,7 +7811,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "644a4423-80e3-4f03-a27f-e70a4ec3b6d4")
+		(uuid "96297e49-699e-4d5a-8a43-d94072d80710")
 	)
 	(wire
 		(pts
@@ -7512,7 +7822,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "efa5ad40-d55f-4978-9f95-62d069949133")
+		(uuid "86b68557-f1cc-4205-99dd-b12d63c38698")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7522,7 +7832,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "3acad931-d333-4ceb-b4c6-380456a86b98")
+		(uuid "34d07dee-c2bd-49f0-9b81-3fb4856d9b79")
 		(property "Reference" "#PWR06"
 			(at 33.02 99.06 0)
 			(show_name no)
@@ -7578,11 +7888,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "1ce7f380-b611-4f2c-8f0e-3a479ae9a3c5")
+			(uuid "9dfc3602-a028-49ac-8325-b0f2d09a724f")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR06")
 					(unit 1)
 				)
@@ -7597,7 +7907,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d028ba0e-ad53-456d-a99c-1246d7ebda4c")
+		(uuid "df3808e1-4b64-4393-b12e-796d5fc09375")
 		(property "Reference" "R2"
 			(at 53.34 83.82 90)
 			(show_name no)
@@ -7687,14 +7997,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "ae00d3d8-5486-46ab-83b3-ebf5550a5d46")
+			(uuid "c2020f24-6cc4-48c8-8ad0-4139ba68836d")
 		)
 		(pin "2"
-			(uuid "5eca99d8-d369-4b37-af53-804e51ea9108")
+			(uuid "56769574-d088-40e0-9d96-68585e697c3d")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R2")
 					(unit 1)
 				)
@@ -7710,7 +8020,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "22b11fb7-e42d-4379-b1ed-2b1e2ed1fa11")
+		(uuid "f2220d3c-4528-406c-b4fd-6dbee018fe3f")
 	)
 	(label "CC2"
 		(at 50.8 77.47 0)
@@ -7720,7 +8030,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "c2a7a38e-4c6c-4a46-9510-0eb5b409d1ac")
+		(uuid "ed9a157b-a30e-48ff-9155-29964c84b34f")
 	)
 	(wire
 		(pts
@@ -7731,7 +8041,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "356e8253-ad93-47ce-ae8d-cff1ea7065c9")
+		(uuid "eb07111f-3edf-4892-98c5-04fdc25b6095")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7741,7 +8051,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "6bfc2755-f1d4-4722-b849-56da2aa5115f")
+		(uuid "cb5dfef7-5d6c-475d-b6b7-966bb50ff60d")
 		(property "Reference" "#PWR07"
 			(at 50.8 99.06 0)
 			(show_name no)
@@ -7797,11 +8107,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "f32f56b4-5f96-4deb-8e92-4073c4160296")
+			(uuid "7397c5f4-f6ff-4f37-9223-77bee6dc5153")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR07")
 					(unit 1)
 				)
@@ -7819,7 +8129,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "c26e6671-56fa-47fa-861b-dc7a1dbce08b")
+		(uuid "b99b287b-4b56-41e0-8acc-84d25609f89e")
 	)
 	(text "D3: VBUS ESD koruması (TVS)"
 		(exclude_from_sim no)
@@ -7832,7 +8142,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "bf797378-43f2-4688-8953-4fd23b6da424")
+		(uuid "524d61d2-4035-4241-b37b-52763b5fd67e")
 	)
 	(rectangle
 		(start 144.78 20.32)
@@ -7845,7 +8155,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "67e5b866-9de2-47ad-9f3d-444b42ae8a36")
+		(uuid "69d3541e-c762-45c3-aa9f-a35d7a91d46d")
 	)
 	(text "2 · Li-ion ŞARJ (TP4056, 1 A)"
 		(exclude_from_sim no)
@@ -7858,7 +8168,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "e603761e-1885-4ffe-9bda-dbf7afe719e5")
+		(uuid "f237a4ef-de6a-4758-9997-4c185160feb9")
 	)
 	(symbol
 		(lib_id "BatteryCharger:TP4056_C725790")
@@ -7869,7 +8179,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8fb5a64a-416b-4dbb-a17f-95b33454b2be")
+		(uuid "c0aae952-407b-4d50-95b4-269304762254")
 		(property "Reference" "U6"
 			(at 213.36 48.26 0)
 			(show_name no)
@@ -7957,35 +8267,35 @@
 			)
 		)
 		(pin "1"
-			(uuid "6dce06fa-c453-4a68-9a4c-240fbf523670")
+			(uuid "984a565f-921e-469f-a832-847652eddbb0")
 		)
 		(pin "2"
-			(uuid "fdb3574d-0819-4520-b2c1-63ff9425cb86")
+			(uuid "7fb3b6d4-e4c6-4679-b8e9-16bcdeff8657")
 		)
 		(pin "3"
-			(uuid "65b3c527-4ea9-4ebf-b043-72a4812c8118")
+			(uuid "3973b48f-f0a2-47d1-9a34-47698e7f6289")
 		)
 		(pin "4"
-			(uuid "a0e5a9ab-cea1-4cda-8c0b-9cb56f319cf5")
+			(uuid "daf5ce0d-2d77-4473-9b7b-2df9fbfaac2a")
 		)
 		(pin "5"
-			(uuid "1a528a9e-e066-47d3-b7a0-7775f2451e41")
+			(uuid "e0142136-dec0-4e13-bf6d-04d49a4b26e6")
 		)
 		(pin "6"
-			(uuid "ef319912-f0d3-4570-ba0b-43bdb9d7fb86")
+			(uuid "e7b7c7ac-9fe9-442b-aced-44f371518a4f")
 		)
 		(pin "7"
-			(uuid "50e01d94-5c08-44b8-918c-46f4afd094f6")
+			(uuid "2a925294-8f5e-481b-9b53-96995a59d091")
 		)
 		(pin "8"
-			(uuid "a50d7689-f70b-40d8-936b-adcec57ddbb5")
+			(uuid "636ee02e-8e02-48cb-ba03-b606ddcb77ef")
 		)
 		(pin "9"
-			(uuid "0aa08be3-75dc-41a5-afc6-ec39fd1ee4e4")
+			(uuid "d38195e5-401d-411e-9180-ea56c56ed24d")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "U6")
 					(unit 1)
 				)
@@ -8001,19 +8311,19 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e96dedbf-a715-4cf9-be92-51f58cf6309e")
+		(uuid "b763e9b3-6e4e-4711-996d-530c1eeb2cd3")
 	)
 	(junction
 		(at 162.56 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0b852f30-07d1-440f-8022-09029d3b780f")
+		(uuid "350148ba-d8a9-47eb-a79e-ae9c8bb81b2e")
 	)
 	(junction
 		(at 152.4 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0616c934-b85d-4a35-a857-4a10bfabf67f")
+		(uuid "d308a6ff-e04e-4143-89fa-fa159ae37081")
 	)
 	(symbol
 		(lib_id "BatteryCharger:CL21A106KAYNNNE")
@@ -8023,7 +8333,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "56fcd808-de23-46c2-a6ef-faccded83e3d")
+		(uuid "58f474b0-c929-4db3-807a-c0ecf1b3a5a1")
 		(property "Reference" "C2"
 			(at 165.1 59.69 90)
 			(show_name no)
@@ -8113,14 +8423,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "2b5c915b-e27c-4aab-98ad-3b767ca1bf9e")
+			(uuid "5a736844-73b6-40e4-a1f1-6c525cbf4dda")
 		)
 		(pin "2"
-			(uuid "192681a4-02f7-4fc9-acad-1013118b3ce1")
+			(uuid "dfb4b4fb-924c-40a3-a3bb-7a363619234e")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "C2")
 					(unit 1)
 				)
@@ -8136,7 +8446,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2bb3dd34-2d8a-447b-8cf4-151c9944f8a5")
+		(uuid "6e0fb122-a85e-40f5-bcda-2ff3b779a4ef")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8146,7 +8456,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "2eb282ca-a806-4c45-bf4c-31de873e02f2")
+		(uuid "e3996c9d-6e12-4646-8bb3-56ccf03ca255")
 		(property "Reference" "#PWR08"
 			(at 162.56 74.93 0)
 			(show_name no)
@@ -8202,11 +8512,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "97e1dc11-d1ee-4389-80c9-cb75a26598c8")
+			(uuid "71cacd65-9282-4485-b331-dc7455c72f84")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR08")
 					(unit 1)
 				)
@@ -8221,7 +8531,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "56409bab-bbc7-48b1-bfbd-abe48608c947")
+		(uuid "3d9158bf-d278-47e8-bb58-b3d8a435c304")
 		(property "Reference" "C8"
 			(at 154.94 59.69 90)
 			(show_name no)
@@ -8311,14 +8621,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "736abbee-c194-48e7-944d-ddec90d3644d")
+			(uuid "245dcd8e-17bf-4822-8b4f-407c8927959c")
 		)
 		(pin "2"
-			(uuid "1bc69b24-9498-4e4a-aa3e-ed689d818861")
+			(uuid "c1aaec29-53fd-46bf-acf2-4f042b5c2192")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "C8")
 					(unit 1)
 				)
@@ -8334,7 +8644,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ad07ba77-4430-4654-be80-fa04447de38c")
+		(uuid "90d468c5-f26a-4ebb-9c7a-0be0957c4917")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8344,7 +8654,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "b88a2c33-962b-42ee-b14c-f627d0b53028")
+		(uuid "e8a412fb-2560-485d-938c-130bbb270d7a")
 		(property "Reference" "#PWR09"
 			(at 152.4 74.93 0)
 			(show_name no)
@@ -8400,11 +8710,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "d7ac1ccb-79a2-4345-89ee-729198e5b087")
+			(uuid "99009cf8-79ed-4fb0-aaa9-ae5cafa61466")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR09")
 					(unit 1)
 				)
@@ -8419,7 +8729,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "548c3d2c-31a4-4363-9a59-ed6bf1545a21")
+		(uuid "9f0f96a6-ed65-4588-b6aa-7d1e320860af")
 		(property "Reference" "#PWR10"
 			(at 147.32 59.69 0)
 			(show_name no)
@@ -8475,11 +8785,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "b75f94e6-ab1b-4a07-8136-45259e2e2f4a")
+			(uuid "11619993-fe5f-4dd2-a8d4-7aa252e05ab7")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR10")
 					(unit 1)
 				)
@@ -8495,7 +8805,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9412e9f4-0718-4d6d-b62e-eee9a29aae1f")
+		(uuid "7e9c138f-cfcc-495b-973e-cc716a8a6ad8")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8505,7 +8815,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "485f580e-b7ac-4700-8575-922974a8af37")
+		(uuid "f0513fa1-6952-4541-9a45-95595410453b")
 		(property "Reference" "#PWR11"
 			(at 191.77 58.42 90)
 			(show_name no)
@@ -8562,11 +8872,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "1ce3c6f3-0214-485c-94c1-34ab6903e8e5")
+			(uuid "7c39fb84-237c-4bcf-a54e-cfbaf165a9b9")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR11")
 					(unit 1)
 				)
@@ -8582,7 +8892,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d2e23c39-fe5e-4628-aa34-0ab4eebb1b87")
+		(uuid "b4ff3b86-3b0e-448a-a24d-7fe1acdea014")
 	)
 	(label "NTC"
 		(at 198.12 63.5 180)
@@ -8592,7 +8902,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "598410da-ba9b-430f-aa46-0d8cfe7262a9")
+		(uuid "c8c50b26-de9b-415d-a474-8c7225f08547")
 	)
 	(wire
 		(pts
@@ -8603,13 +8913,13 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "53c44222-6ca2-4c61-8095-29d187ce7366")
+		(uuid "848eca89-2e5a-49e7-a42c-3b7034450f83")
 	)
 	(junction
 		(at 187.96 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4f5ac068-1e62-49cd-a87e-db5ad799b6ec")
+		(uuid "d690c248-8451-48b4-99d9-dffd85f1da86")
 	)
 	(symbol
 		(lib_id "BatteryCharger:0603WAF1201T5E")
@@ -8619,7 +8929,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8a6567d1-0a27-4674-9568-02391b91ef11")
+		(uuid "4b96cbdc-ea4d-48a5-97f2-590870d209cb")
 		(property "Reference" "R9"
 			(at 190.5 64.77 90)
 			(show_name no)
@@ -8709,14 +9019,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "91d185e5-4a00-496b-bfa0-d301b5b860ea")
+			(uuid "d52555f0-3471-478c-a959-63c6935ba42a")
 		)
 		(pin "2"
-			(uuid "2f4984d0-2c87-44aa-a3e2-662d0438b6f5")
+			(uuid "95d78b15-c742-4e39-a55e-f7f51276af9f")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R9")
 					(unit 1)
 				)
@@ -8732,7 +9042,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f532bbbe-701d-490a-a10b-a83a10402b01")
+		(uuid "ae80b99d-cfeb-4e9e-a47d-286edd5a9faf")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8742,7 +9052,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "2e9e0813-8e97-4d30-910b-ebd3f3e48ddd")
+		(uuid "88643c35-fc7b-47f2-8693-f5e50e6f3c7e")
 		(property "Reference" "#PWR12"
 			(at 187.96 80.01 0)
 			(show_name no)
@@ -8798,11 +9108,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "c60d9194-b706-4824-bd84-e1a529f6c4ed")
+			(uuid "b5c3f75b-f5ea-4573-ba74-d721d1469279")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR12")
 					(unit 1)
 				)
@@ -8817,7 +9127,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "b082e223-054d-4631-a2f6-9b4915c94d7e")
+		(uuid "d6c9612b-8b31-4e09-82df-d99d4b5ed5d2")
 	)
 	(wire
 		(pts
@@ -8828,7 +9138,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9ba71173-f470-4d3a-ab46-37519c85430f")
+		(uuid "db20fc57-86e4-4f7c-9a6a-be5931a49a63")
 	)
 	(label "BAT+"
 		(at 236.22 55.88 0)
@@ -8838,7 +9148,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "7e8b3483-1719-4903-ae2a-b64ed43677b7")
+		(uuid "4faeb8e3-a572-4324-9c94-c19ffb073c26")
 	)
 	(wire
 		(pts
@@ -8849,7 +9159,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b1ec66ac-2720-4a02-92f4-547e44eee366")
+		(uuid "60fcd4ae-396f-4b04-82e9-df331889e90c")
 	)
 	(label "~{STDBY}"
 		(at 236.22 58.42 0)
@@ -8859,7 +9169,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ba803265-3f70-4288-b536-dbc7c1fb9f77")
+		(uuid "63889bfb-b4c2-41e1-a02b-10f5109dbd59")
 	)
 	(wire
 		(pts
@@ -8870,7 +9180,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "235dcd09-3c34-4bdf-a7ce-08adf2b7ef6b")
+		(uuid "b62490f6-bff1-4f44-b607-2ee83f9ef051")
 	)
 	(label "~{CHRG}"
 		(at 236.22 60.96 0)
@@ -8880,7 +9190,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "8ba7ec9c-8580-44b8-9cf4-44c4f73e6df0")
+		(uuid "e04df431-e3c5-493e-bc35-0483b0801381")
 	)
 	(wire
 		(pts
@@ -8891,7 +9201,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f6ac3141-6011-4b24-b5b7-ab8bacd21779")
+		(uuid "add61ac5-f1eb-4db1-b127-8f9bc57387d7")
 	)
 	(symbol
 		(lib_id "power:VBUS")
@@ -8901,7 +9211,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "6bc6a981-c156-48f3-b8c7-e582b30b143c")
+		(uuid "0866438a-8817-446c-9a6a-cb717e040003")
 		(property "Reference" "#PWR13"
 			(at 224.79 63.5 90)
 			(show_name no)
@@ -8958,11 +9268,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "fe97e1ad-b6e0-4880-84a7-551306b1d0c7")
+			(uuid "48de0690-f8b8-4cad-b029-5b2cbad17476")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR13")
 					(unit 1)
 				)
@@ -8978,7 +9288,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d8a1cf05-d617-4f5d-a1cb-d86e5c4b8143")
+		(uuid "5e31407a-ff10-4b8b-a92d-b0a35f6163c0")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8988,7 +9298,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "ae2274ff-97c9-491d-b152-360c1cb28631")
+		(uuid "7db769f7-a80c-47f5-b55c-09e6c0010d05")
 		(property "Reference" "#PWR14"
 			(at 234.95 66.04 90)
 			(show_name no)
@@ -9045,11 +9355,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "8b243ef3-4a9f-4835-abc3-0d63505a9465")
+			(uuid "9429bbd7-4f37-4280-95aa-7f3661314898")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR14")
 					(unit 1)
 				)
@@ -9067,7 +9377,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "b30ed5ce-c5cc-46a8-b490-5749715660dd")
+		(uuid "3d18e36a-321f-4d50-85c6-7c37553f337b")
 	)
 	(text "~{CHRG} / ~{STDBY}: açık-drain çıkış,\nçekme dirençleri blok 8'de"
 		(exclude_from_sim no)
@@ -9080,7 +9390,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "2d3d655e-aadb-4246-b4fe-d506c79fb3de")
+		(uuid "50d051e7-c961-47b2-b0ef-8615b623033e")
 	)
 	(rectangle
 		(start 274.32 20.32)
@@ -9093,9 +9403,9 @@
 		(fill
 			(type none)
 		)
-		(uuid "a0b4c12e-b3e6-45ba-951c-073f0f07280a")
+		(uuid "dec7ce1c-06a1-4701-89da-86d7f3dec434")
 	)
-	(text "3 · PİL + KORUMA (DW01A + FS8205A)"
+	(text "3 · PİL + KORUMA (DW01A + FS8205A, opsiyonel)"
 		(exclude_from_sim no)
 		(at 276.86 22.86 0)
 		(effects
@@ -9106,7 +9416,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "f6dee26b-25a9-4bb8-9203-788262ac0321")
+		(uuid "4407e58b-106e-4895-92ff-845c2badf68d")
 	)
 	(symbol
 		(lib_id "BatteryCharger:B3B-XH-A")
@@ -9116,7 +9426,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0e9199f8-347e-48af-b9de-e202116fd91e")
+		(uuid "ece1838e-bf4e-46c5-849e-9c83f1b66bc1")
 		(property "Reference" "J7"
 			(at 287.02 52.07 90)
 			(show_name no)
@@ -9204,17 +9514,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "fc18bfc9-447f-45f2-9f70-ac2cecc05b8c")
+			(uuid "7b858760-5672-4aab-aca4-747277764e3d")
 		)
 		(pin "2"
-			(uuid "e5304868-9057-4430-86c9-e34538addf2e")
+			(uuid "ccb4fae2-bb4e-470f-8167-804bc1ec8255")
 		)
 		(pin "3"
-			(uuid "6029171b-8d37-456e-bb96-498cc48c035e")
+			(uuid "7b412cd0-0bec-43c4-bfa0-d058aca40dbe")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "J7")
 					(unit 1)
 				)
@@ -9230,7 +9540,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d806c27e-6ed3-4fdb-ab2b-0cece42256fa")
+		(uuid "38223c9f-4065-4e13-8098-8ace50be72d6")
 	)
 	(label "BAT+"
 		(at 299.72 55.88 0)
@@ -9240,7 +9550,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "5d2d8558-3ee1-4316-9d5a-799e1ec1cd7b")
+		(uuid "14e9b230-9960-41b0-939e-7b9a661365e0")
 	)
 	(wire
 		(pts
@@ -9251,7 +9561,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4b804f44-78a0-4bc1-aca2-1452cc7889ec")
+		(uuid "77285aa2-881a-4d5d-995c-5bf976fb4a9f")
 	)
 	(label "NTC"
 		(at 299.72 58.42 0)
@@ -9261,7 +9571,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "7653de84-ac8f-4944-95a1-a18ca0fd3185")
+		(uuid "d4447e56-1e19-4972-8b32-cba1bca82402")
 	)
 	(wire
 		(pts
@@ -9272,7 +9582,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "98a27005-3a0c-414f-a0a4-a0f9385a00fe")
+		(uuid "7e017c93-21ed-4d21-a963-2145d5c75953")
 	)
 	(label "BAT-"
 		(at 299.72 60.96 0)
@@ -9282,19 +9592,19 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "d30e1745-8f80-4f80-b082-a660387420f4")
+		(uuid "dc4893ec-6f46-439a-a944-5b761e172bfd")
 	)
 	(symbol
 		(lib_id "BatteryCharger:CL21A106KAYNNNE")
-		(at 287.02 76.2 90)
+		(at 304.8 71.12 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "528085ef-15b5-4d11-b3b3-115091f9e665")
+		(uuid "22d51049-ecd7-44a6-b623-7423c3e2043b")
 		(property "Reference" "C6"
-			(at 289.56 74.93 90)
+			(at 307.34 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9305,7 +9615,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 289.56 77.47 90)
+			(at 307.34 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9316,7 +9626,7 @@
 			)
 		)
 		(property "Footprint" "BatteryCharger:C0805"
-			(at 294.64 76.2 90)
+			(at 312.42 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -9327,7 +9637,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21A106KAYNNNE_10uF-106-10-25V_C15850.html"
-			(at 297.18 76.2 90)
+			(at 314.96 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -9338,7 +9648,7 @@
 			)
 		)
 		(property "Description" "10uF (106) ±10% 25V"
-			(at 287.02 76.2 90)
+			(at 304.8 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -9349,7 +9659,7 @@
 			)
 		)
 		(property "Manufacturer" "SAMSUNG"
-			(at 299.72 76.2 90)
+			(at 317.5 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -9360,7 +9670,7 @@
 			)
 		)
 		(property "MPN" "CL21A106KAYNNNE"
-			(at 302.26 76.2 90)
+			(at 320.04 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -9371,7 +9681,7 @@
 			)
 		)
 		(property "LCSC Part" "C15850"
-			(at 304.8 76.2 90)
+			(at 322.58 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -9382,14 +9692,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "a7df2a68-bd00-4590-85f4-daeb22aa5585")
+			(uuid "ba6178b7-1d71-4250-8a7a-953fffc2f237")
 		)
 		(pin "2"
-			(uuid "48605f3e-0796-41f1-80be-8be017b598dc")
+			(uuid "ff3e01b4-c82f-43bc-87e8-d3c4ea63a626")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "C6")
 					(unit 1)
 				)
@@ -9398,47 +9708,47 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 71.12)
-			(xy 287.02 68.58)
+			(xy 304.8 66.04)
+			(xy 304.8 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "67b311a9-6e13-4ff7-a1cf-aa5d96a0a789")
+		(uuid "18a5d40c-07c1-4c4b-a3a6-0b5160bb9de9")
 	)
 	(label "BAT+"
-		(at 287.02 68.58 0)
+		(at 304.8 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "0e587772-e433-42fe-9f31-0cddbacfbc24")
+		(uuid "feae84e9-93c3-4cfa-b1cc-f65bc2b31ad8")
 	)
 	(wire
 		(pts
-			(xy 287.02 81.28)
-			(xy 287.02 83.82)
+			(xy 304.8 76.2)
+			(xy 304.8 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cd689840-63d1-4114-8b78-b4316a1df346")
+		(uuid "2760705d-2d63-4757-803e-2a6d63d2748b")
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 287.02 83.82 0)
+		(at 304.8 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "1a79a63e-2e2c-4091-91c7-bd9ef1a3c965")
+		(uuid "d023fbb6-99a2-4a71-acae-26fd1d0faea4")
 		(property "Reference" "#PWR15"
-			(at 287.02 90.17 0)
+			(at 304.8 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -9449,7 +9759,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 287.02 87.63 0)
+			(at 304.8 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9459,7 +9769,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 287.02 83.82 0)
+			(at 304.8 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -9470,7 +9780,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 287.02 83.82 0)
+			(at 304.8 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -9481,7 +9791,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 287.02 83.82 0)
+			(at 304.8 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -9492,11 +9802,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "fe3bb16a-5e5c-471b-9b6e-597ff314f23d")
+			(uuid "f7357cab-9f55-46d7-adaf-1a495e4182ac")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#PWR15")
 					(unit 1)
 				)
@@ -9511,8 +9821,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
-		(uuid "0a0a98b7-bffc-4417-bf64-b8547c2f5752")
+		(dnp yes)
+		(uuid "948c509f-7516-4fad-9ca5-05720fff43ab")
 		(property "Reference" "U2"
 			(at 345.44 38.1 0)
 			(show_name no)
@@ -9600,26 +9910,26 @@
 			)
 		)
 		(pin "1"
-			(uuid "f7c9ce85-e856-4ada-82a6-1914f171bb11")
+			(uuid "5e08fdf2-4989-4d53-b87d-7efa442e141b")
 		)
 		(pin "2"
-			(uuid "05fc8d97-6072-4889-a237-48fdd6595bf5")
+			(uuid "36a91ad3-5d15-4622-9747-5f35a03611f7")
 		)
 		(pin "3"
-			(uuid "536f244a-94a7-4b2e-8d4f-6384f32837ac")
+			(uuid "8852cfb2-269f-4acd-ba58-00a649bc2f45")
 		)
 		(pin "4"
-			(uuid "de092805-2c0e-4f58-a35e-01f625483e95")
+			(uuid "75bd11cb-1e58-43b3-bd2e-fb8aa566a911")
 		)
 		(pin "5"
-			(uuid "267b6532-d02d-48f1-972d-509b37baf541")
+			(uuid "cc4883fd-3270-49b3-af3a-d89f8f2eb244")
 		)
 		(pin "6"
-			(uuid "00c5e697-bb56-4ae9-97ea-06049b22ada5")
+			(uuid "e6f61187-b7a5-45de-a706-de3e09f76fc6")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "U2")
 					(unit 1)
 				)
@@ -9634,10 +9944,10 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
-		(uuid "b7722a52-10a3-4237-87d2-3a00f4d8872b")
+		(dnp yes)
+		(uuid "f73790c4-42d3-4faf-89ed-d86df55fccdc")
 		(property "Reference" "Q3"
-			(at 345.44 73.66 0)
+			(at 345.44 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9647,7 +9957,7 @@
 			)
 		)
 		(property "Value" "FS8205A"
-			(at 345.44 88.9 0)
+			(at 345.44 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9723,26 +10033,26 @@
 			)
 		)
 		(pin "1"
-			(uuid "95266d97-eec8-4ebb-b563-826f6c30d128")
+			(uuid "de49d953-ee97-4fc2-8b15-86747be790df")
 		)
 		(pin "2"
-			(uuid "e5b30447-ca3f-4525-a252-9262bd71d84a")
+			(uuid "55f27b17-d447-4bc9-9946-1be9dd10a6a0")
 		)
 		(pin "3"
-			(uuid "39593120-8849-436c-bc13-50115d85d39f")
+			(uuid "825944e2-e522-4431-a3dc-69bed927a05d")
 		)
 		(pin "4"
-			(uuid "e4c163ee-a2b6-49eb-b026-f5a6e768bd72")
+			(uuid "d8294b6e-f895-4103-898a-235dc7cf8bcd")
 		)
 		(pin "5"
-			(uuid "880a54de-729d-4e44-b58a-91731d08ec44")
+			(uuid "94424552-03b3-4ed1-9161-ee2d6d6abc57")
 		)
 		(pin "6"
-			(uuid "916e428d-a8c1-454b-a947-5e1e0dc73beb")
+			(uuid "8e17adf1-c9b1-47db-a6cf-8c54948f99af")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "Q3")
 					(unit 1)
 				)
@@ -9758,7 +10068,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4dd5ce4d-ee08-482b-9fdd-8ad7be4d0f59")
+		(uuid "a4e47e09-bff3-46e0-9ffa-1dd65c0b34c2")
 	)
 	(wire
 		(pts
@@ -9769,7 +10079,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2138a845-1039-4cfe-9cb0-855553fbc8a0")
+		(uuid "cfa3094f-ffcb-4910-9b0d-4b0d5561a798")
 	)
 	(wire
 		(pts
@@ -9780,7 +10090,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4a2d6196-d0fc-429c-8d4f-5189e95759fa")
+		(uuid "4f916a9d-e887-4c02-8302-1defa57000f0")
 	)
 	(wire
 		(pts
@@ -9791,7 +10101,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "3018dd4a-75f2-42dc-8482-f43e6c80f870")
+		(uuid "4536f74d-9a28-4cdf-859d-33f8593e7748")
 	)
 	(wire
 		(pts
@@ -9802,7 +10112,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c0401bff-f167-48b7-ab4e-10193a8835f8")
+		(uuid "f6c79456-2ca0-4b82-a7cd-80d5255a2807")
 	)
 	(wire
 		(pts
@@ -9813,7 +10123,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4cef849d-773d-4bb0-964d-2dbcd35893f0")
+		(uuid "5ed375bb-95e7-4f21-a444-b3c54ede2457")
 	)
 	(label "DW_CS"
 		(at 355.6 45.72 0)
@@ -9823,11 +10133,11 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "5df6b3a3-e27d-49d2-b77c-f4a26d737dae")
+		(uuid "20d857c6-8e1d-40ea-af7e-0dc7e895b89d")
 	)
 	(no_connect
 		(at 335.28 48.26)
-		(uuid "951a2a3d-84aa-4bf1-8190-ff33d842c23d")
+		(uuid "7276f67a-0946-4096-b79a-93a5d76f607c")
 	)
 	(wire
 		(pts
@@ -9838,7 +10148,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "eb90c29d-eabf-4452-aa4d-3b524f77c279")
+		(uuid "3ec87761-197d-4f7c-8753-cf6448ceffee")
 	)
 	(label "BAT-"
 		(at 332.74 43.18 180)
@@ -9848,7 +10158,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "4b5e0dcc-968d-424d-a378-94e61f8fafa4")
+		(uuid "9d584fe5-d093-4716-98e9-1387848fa403")
 	)
 	(wire
 		(pts
@@ -9859,13 +10169,13 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9129f7e4-f99a-43a0-a139-52003d668140")
+		(uuid "9500b9b9-cefc-406f-a8f0-3e146a9c8e6c")
 	)
 	(junction
 		(at 325.12 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6caf231a-0a2c-46dd-a832-b87200d55d13")
+		(uuid "8602fbf3-4144-4687-b2d9-c9e30b0779f3")
 	)
 	(symbol
 		(lib_id "BatteryCharger:0603WAF1000T5E")
@@ -9874,8 +10184,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
-		(uuid "0ea49a46-beac-45fd-a559-9e5f77390f5b")
+		(dnp yes)
+		(uuid "4627d6b0-ee22-48a8-a1d0-d847b3075b44")
 		(property "Reference" "R5"
 			(at 307.34 43.18 0)
 			(show_name no)
@@ -9963,14 +10273,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "dd0b3158-d297-46f9-9a4d-d855f3a9d327")
+			(uuid "00e0e0bb-4298-4eac-9398-7e69e49b8b85")
 		)
 		(pin "2"
-			(uuid "b6e197d7-5af4-469e-8e34-12c3402f0681")
+			(uuid "6a0ca1cd-3b70-446f-9834-390d49700e4b")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R5")
 					(unit 1)
 				)
@@ -9986,7 +10296,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2265fa6a-4a9a-43e5-b8df-8fbae2aac329")
+		(uuid "7d856177-223e-44e6-9bb5-879061e307ba")
 	)
 	(label "BAT+"
 		(at 299.72 45.72 180)
@@ -9996,7 +10306,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "dacca893-c007-4684-b163-18bf2140456c")
+		(uuid "99099d78-4620-4315-a762-92b21161b600")
 	)
 	(symbol
 		(lib_id "BatteryCharger:CL10B104KB8NNNC")
@@ -10005,8 +10315,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
-		(uuid "ff51ee5d-4b5c-4e5d-a33a-1f334f981677")
+		(dnp yes)
+		(uuid "986f44b6-6f82-4a7a-a65b-9a59bb7178f0")
 		(property "Reference" "C7"
 			(at 327.66 49.53 90)
 			(show_name no)
@@ -10096,14 +10406,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "31b80e10-ef8f-4ddb-8705-8b68ef6ed799")
+			(uuid "2e661813-b375-4de9-9508-49a735dac319")
 		)
 		(pin "2"
-			(uuid "e2318692-ea37-40e6-92e0-a95bd45eca02")
+			(uuid "a134a169-05b6-419e-a5e4-6fe28e87867a")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "C7")
 					(unit 1)
 				)
@@ -10119,7 +10429,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "508d5159-9ff5-4a78-967f-a72a745ca79c")
+		(uuid "5c12a8b3-56cf-4904-917b-8dc60fd93ce0")
 	)
 	(label "BAT-"
 		(at 325.12 58.42 0)
@@ -10129,7 +10439,226 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "38f52089-d797-4002-a146-907ba813efe7")
+		(uuid "6931f34f-d4e1-42d1-ae1f-5a34baf5b691")
+	)
+	(symbol
+		(lib_id "BatteryCharger:0603WAF0000T5E")
+		(at 320.04 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a8b54ab5-2d46-42ed-8476-63f9306111a9")
+		(property "Reference" "R21"
+			(at 322.58 69.85 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0R"
+			(at 322.58 72.39 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "BatteryCharger:R0603"
+			(at 327.66 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_0R-0R0-1_C21189.html"
+			(at 330.2 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0Ω (0R0) ±1%"
+			(at 320.04 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 332.74 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF0000T5E"
+			(at 335.28 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C21189"
+			(at 337.82 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "588f2d42-72ae-4097-a715-9a1125d84a64")
+		)
+		(pin "2"
+			(uuid "b387aa2b-0599-4435-938f-28b18406c2a1")
+		)
+		(instances
+			(project "battery-charger"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 320.04 66.04)
+			(xy 320.04 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6deca1a0-5ac7-41dc-9c10-e65123775e9c")
+	)
+	(label "BAT-"
+		(at 320.04 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d4e1023d-9cf7-40a3-b731-6899222e639a")
+	)
+	(wire
+		(pts
+			(xy 320.04 76.2)
+			(xy 320.04 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b0e8869-08d8-4545-a48c-de47aaa016a7")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 320.04 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "1d3158f4-59a3-4e5a-83aa-bbc10eeb39e0")
+		(property "Reference" "#PWR16"
+			(at 320.04 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 320.04 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 320.04 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 320.04 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 320.04 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e45149b4-06a1-4f70-9db5-f7985f103f64")
+		)
+		(instances
+			(project "battery-charger"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR16")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(wire
 		(pts
@@ -10140,7 +10669,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ea7222e8-dbb3-457c-8af3-80be8c7b2cd9")
+		(uuid "d65fbbdc-8515-4211-a885-d48253379a1f")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -10150,8 +10679,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "e8b84eb9-3f47-4717-867e-ba078c52b836")
-		(property "Reference" "#PWR16"
+		(uuid "b0b2e5fc-f1a1-4d93-a96f-4f2fe2f06641")
+		(property "Reference" "#PWR17"
 			(at 323.85 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10207,12 +10736,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ba924fee-702a-41ba-a82b-4a548c933bc9")
+			(uuid "5d1db776-8f00-4012-bff6-e6420fb713a1")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR16")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR17")
 					(unit 1)
 				)
 			)
@@ -10227,7 +10756,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b25bdfd2-819a-495c-8f17-e69999b4179a")
+		(uuid "3139a80f-522a-4ec3-8aec-baedbb8860cd")
 	)
 	(label "BAT-"
 		(at 330.2 83.82 180)
@@ -10237,15 +10766,15 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "dddeab14-2dd5-4218-b02e-a5f13a25b690")
+		(uuid "4eecb4d1-66f7-4f05-8b13-1ff9027c305b")
 	)
 	(no_connect
 		(at 332.74 81.28)
-		(uuid "3d7d30dd-929e-434c-b964-767714726414")
+		(uuid "ea84be89-2d9f-41bd-b910-16a21a42a6fe")
 	)
 	(no_connect
 		(at 358.14 81.28)
-		(uuid "79eacdd8-93ed-4efe-8820-1bae365bba91")
+		(uuid "da29ac4e-05a2-48c5-83ac-7b303c45f59a")
 	)
 	(symbol
 		(lib_id "BatteryCharger:0603WAF1001T5E")
@@ -10254,8 +10783,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
-		(uuid "2c5e34cd-1423-47d3-899a-edff6173b91c")
+		(dnp yes)
+		(uuid "f03b6b74-91c7-40b1-bad6-ede18dfd3645")
 		(property "Reference" "R8"
 			(at 383.54 74.93 90)
 			(show_name no)
@@ -10345,14 +10874,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "e677ec28-b85e-46bf-b9cf-7cd7f91b1ccc")
+			(uuid "b3883227-feb0-4004-955d-8001d270e6e9")
 		)
 		(pin "2"
-			(uuid "046a4a27-8071-4c11-be2d-6224fd988b2f")
+			(uuid "c95d5713-dfab-4875-8222-9de4cd4ece53")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R8")
 					(unit 1)
 				)
@@ -10368,7 +10897,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f3f381e5-cffc-40e7-9d9f-2b590859f62b")
+		(uuid "86c7cee3-8b89-4983-8c3d-dd5da0b36fdd")
 	)
 	(label "DW_CS"
 		(at 381 68.58 0)
@@ -10378,7 +10907,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "b442d64e-ea52-474f-907d-b5d3a4f79441")
+		(uuid "6e4bb75a-ba29-46f2-abdc-edaae9820951")
 	)
 	(wire
 		(pts
@@ -10389,7 +10918,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "141b6ce4-4a1c-4efd-99e1-2944eea4e78a")
+		(uuid "c7a7e5f4-c52c-4fbd-a04d-32af913f794f")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -10399,8 +10928,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "67314cb7-c58c-428d-b79e-ed2db3e02e0b")
-		(property "Reference" "#PWR17"
+		(uuid "c8c604f6-17ee-4df2-bc61-b59b2d6d7605")
+		(property "Reference" "#PWR18"
 			(at 381 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10455,20 +10984,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "d14974c8-b801-4752-912e-cc93aacfee1c")
+			(uuid "1ab26cf4-6d20-4092-93ac-90b91395cc02")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR17")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR18")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(text "J7: 1 = BAT+  2 = NTC  3 = BAT− (pil kablosuna göre kontrol!)\nBAT- = pil eksi ucu, GND = koruma sonrası (P-)\nDW01A: 4.3 V aşırı şarj · 2.4 V aşırı deşarj\naşırı akım / kısa devre kesmesi"
+	(text "Korumalı (devreli) pil: U2, Q3, R5, C7, R8 takılmaz (DNP), R21 = 0Ω köprü\nKorumasız pil: U2, Q3, R5, C7, R8 takılır, R21 SÖKÜLÜR (ikisi birlikte olmaz!)\nJ7: 1 = BAT+  2 = NTC  3 = BAT− (pil kablosuna göre kontrol!)\nBAT- = pil eksi ucu, GND = koruma sonrası (P-)\nDW01A: 4.3 V aşırı şarj · 2.4 V aşırı deşarj\naşırı akım / kısa devre kesmesi"
 		(exclude_from_sim no)
-		(at 279.4 90.17 0)
+		(at 279.4 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10477,7 +11006,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "a74eef6f-8767-4c09-acf4-620857c6b7e6")
+		(uuid "32ce0a65-4738-4745-9ed5-44753f94bfa0")
 	)
 	(rectangle
 		(start 15.24 111.76)
@@ -10490,7 +11019,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "a83d4b76-1387-412b-87b4-2c0132eb4bb9")
+		(uuid "f222ea26-f59d-4c6e-8b9d-35510b9ad09f")
 	)
 	(text "4 · GÜÇ YOLU + ANAHTAR"
 		(exclude_from_sim no)
@@ -10503,7 +11032,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "5903d8c6-7daa-4495-a8a9-dc3b64aab4ad")
+		(uuid "7f79d610-75f1-46aa-bfb6-bd54fe99ed12")
 	)
 	(symbol
 		(lib_id "power:VBUS")
@@ -10513,8 +11042,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "2ada6833-a581-45b5-b1c9-62f9a533834f")
-		(property "Reference" "#PWR18"
+		(uuid "2a4ff8d0-3182-4ddb-ae94-a0fa9b80ead4")
+		(property "Reference" "#PWR19"
 			(at 27.94 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10569,12 +11098,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "c76bd5e1-838d-406f-9be3-8c8639b89834")
+			(uuid "599e516e-5178-4d1d-9643-0b55837a8c1f")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR18")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR19")
 					(unit 1)
 				)
 			)
@@ -10589,7 +11118,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "eae4589c-461b-4a0b-89a6-4821cae723e4")
+		(uuid "6a46671d-5aaf-4a04-966c-f3f25f940a0a")
 		(property "Reference" "D2"
 			(at 50.8 132.08 0)
 			(show_name no)
@@ -10677,14 +11206,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "b5f61a6e-0bc1-4707-84f3-e03fdf5a5586")
+			(uuid "106ebeff-e81e-4139-9728-979b18451d4b")
 		)
 		(pin "2"
-			(uuid "5dc4d0a6-18f6-47c8-b8ac-5a780aef89e0")
+			(uuid "dc068f1e-33a9-41e8-8b41-b721edc171fe")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "D2")
 					(unit 1)
 				)
@@ -10700,19 +11229,19 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6efe5b5e-3ad6-4236-a5a4-280ea2560d9e")
+		(uuid "a1ddb04b-9697-4b54-bf54-3a22a8f8317e")
 	)
 	(junction
 		(at 33.02 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6b85973e-85d4-4832-b03a-31a096190182")
+		(uuid "9c48bf47-02cd-41e4-8945-3ad2afbc47a1")
 	)
 	(junction
 		(at 40.64 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e3dadd35-7fc0-43a8-acec-38070b10c9a2")
+		(uuid "ce0871f9-9a9a-4111-8a36-16e5030f63a3")
 	)
 	(symbol
 		(lib_id "BatteryCharger:0603WAF1003T5E")
@@ -10722,7 +11251,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "95de34ea-b3b2-4f35-a882-387b1b44d60b")
+		(uuid "288641da-4916-4414-a33b-1328f6cccc21")
 		(property "Reference" "R7"
 			(at 35.56 140.97 90)
 			(show_name no)
@@ -10812,14 +11341,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "24cad695-59ae-41be-ae96-238487875569")
+			(uuid "65d77ab4-87a0-4bce-ac34-baf54f755d4f")
 		)
 		(pin "2"
-			(uuid "42c6e6dc-2994-443c-b575-912d2445057a")
+			(uuid "c1dbf1d6-0fea-46d2-ba75-f4a423b460ca")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R7")
 					(unit 1)
 				)
@@ -10835,7 +11364,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "198c8817-ee7e-499f-b229-2adc5207d647")
+		(uuid "2bbfe16e-247a-466b-a602-2e96532389a2")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -10845,8 +11374,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "c2c136f2-6e95-4985-8e43-57a3e551445f")
-		(property "Reference" "#PWR19"
+		(uuid "2a2fd005-dff7-4781-93f2-7742f0b8bf4b")
+		(property "Reference" "#PWR20"
 			(at 33.02 156.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10901,12 +11430,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f942ea9f-8fa9-4815-a3f6-1ab9ee8f3789")
+			(uuid "ac894219-c37c-4c4a-ab95-31a44588cda0")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR19")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR20")
 					(unit 1)
 				)
 			)
@@ -10921,7 +11450,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "51d34da2-1454-4219-b432-35d8efc0ce81")
+		(uuid "545ac206-7efe-4fa4-a312-1e65d885e312")
 		(property "Reference" "Q1"
 			(at 66.04 140.97 0)
 			(show_name no)
@@ -11011,17 +11540,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "d4871a3e-f6c0-4590-9fbd-fb7ee4a9a2b2")
+			(uuid "d05f7e1e-d802-445a-9328-77e6a490eee7")
 		)
 		(pin "2"
-			(uuid "60553bb6-2f9f-485c-9305-98a53d754bda")
+			(uuid "396639e7-9591-4939-95df-45c5fadbf993")
 		)
 		(pin "3"
-			(uuid "b99d234d-34e3-4a75-a871-6c50c63b6b53")
+			(uuid "353a8c26-7db0-474b-baf4-d1572543fdca")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "Q1")
 					(unit 1)
 				)
@@ -11037,7 +11566,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "cb27ddba-7d1d-428e-a468-b7262d3c15ac")
+		(uuid "d6b29d03-cc84-4c9e-8f17-f42608617c26")
 	)
 	(wire
 		(pts
@@ -11048,7 +11577,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d19a9452-5873-495a-9e4d-28a8ed6c9df1")
+		(uuid "9295883a-484b-4e20-8d5b-077da786da0b")
 	)
 	(symbol
 		(lib_id "BatteryCharger:AO3401A")
@@ -11058,7 +11587,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bf0685e2-2fd3-4ad3-9b3c-57c6ff7851e8")
+		(uuid "3c7b16e2-f6c6-4c51-a2e4-602595e73dda")
 		(property "Reference" "Q5"
 			(at 92.71 130.81 90)
 			(show_name no)
@@ -11148,17 +11677,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "34adee3d-e55a-4551-b0d1-a87d4bc630c1")
+			(uuid "5e9536e2-ff77-4194-8955-7e2ae96395b2")
 		)
 		(pin "2"
-			(uuid "579684d2-5f7c-4acf-b34a-ff5016830fa3")
+			(uuid "b44cd8de-8640-444e-b9b8-d1cbd5e9f56b")
 		)
 		(pin "3"
-			(uuid "8dcf2769-13d9-4d27-88d2-215ce0fffbda")
+			(uuid "f46e75fb-f2fa-4a34-a118-ed143cd1177a")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "Q5")
 					(unit 1)
 				)
@@ -11174,7 +11703,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "740a4b67-bebe-4e08-9c4f-4785aa332a5a")
+		(uuid "7b63b0f6-4fea-4b6f-a6f1-a9b34ccfd806")
 	)
 	(wire
 		(pts
@@ -11185,7 +11714,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0b83d85f-f8eb-44c2-8ac6-3bea4115cb42")
+		(uuid "85073e56-ca2c-4ce9-90a8-305fedc2c51b")
 	)
 	(wire
 		(pts
@@ -11196,19 +11725,19 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7bd04108-9e04-4199-9e1b-6f5f22ea2e84")
+		(uuid "9bb6478c-5f61-4259-985d-3d67a31a0404")
 	)
 	(junction
 		(at 63.5 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "274cc70f-4ccb-4eca-b9e2-58356501c759")
+		(uuid "31028d76-bb13-4e98-9cd3-297e25303c10")
 	)
 	(junction
 		(at 76.2 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "88168909-d3b8-45ff-adf7-c9e6aaf8db45")
+		(uuid "1ab5cad8-7890-4215-8060-de0c87bd6845")
 	)
 	(symbol
 		(lib_id "BatteryCharger:0603WAF1003T5E")
@@ -11218,7 +11747,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d9d78cc1-0fe2-416f-baff-daa4c8856f3d")
+		(uuid "870ea9f4-d795-4fc8-8c19-3aa3ff133702")
 		(property "Reference" "R15"
 			(at 78.74 130.81 90)
 			(show_name no)
@@ -11308,14 +11837,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "710a3036-38f0-4b97-8fa9-f9fb0d0e0e09")
+			(uuid "244b1ba4-6456-4828-922b-d193169413ea")
 		)
 		(pin "2"
-			(uuid "af379cac-595c-4695-bb4b-7b6645adc4c3")
+			(uuid "0c0fe837-84d6-42d8-90f6-073da96a13e3")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R15")
 					(unit 1)
 				)
@@ -11331,7 +11860,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "fc98e0ef-5110-44ca-b8d4-1a1492d4b631")
+		(uuid "fbb4141c-0991-4271-af7d-09df9dbc995a")
 	)
 	(wire
 		(pts
@@ -11342,7 +11871,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d4248c48-3097-445a-ab8d-dcda5ddf0f4d")
+		(uuid "f7b82de4-0cb9-4a11-876c-0709774a03d7")
 	)
 	(symbol
 		(lib_id "BatteryCharger:SS12D10G4071")
@@ -11352,7 +11881,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "53608bae-2edd-4aa1-9fbc-370742cabbe0")
+		(uuid "47dd281d-011e-47c5-b903-c1b03a8259ae")
 		(property "Reference" "SW2"
 			(at 102.87 116.84 0)
 			(show_name no)
@@ -11442,17 +11971,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "b8d3fa4c-6b42-47c8-a7c9-6908421f0601")
+			(uuid "82af482d-5258-47cf-883f-e0ee9d88a544")
 		)
 		(pin "2"
-			(uuid "48e94c78-05f8-4a2c-b56d-12445b474953")
+			(uuid "4de52dfc-95c0-42b1-92bd-5240b2b6d9d2")
 		)
 		(pin "3"
-			(uuid "d280642d-a49e-4853-8500-cbaabaf438bd")
+			(uuid "fff67acb-b33f-4ec8-946f-1ebb05bde39d")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "SW2")
 					(unit 1)
 				)
@@ -11468,7 +11997,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6fd7c8ff-052b-4bd4-b173-c44741c3c508")
+		(uuid "9c2b7d93-2b68-4705-9786-fd9ddedb27c9")
 	)
 	(wire
 		(pts
@@ -11479,17 +12008,17 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f5b3320f-46b5-46c3-b9cb-c509c94016df")
+		(uuid "f33fd10f-723c-4dfc-bc4d-aabf21382442")
 	)
 	(junction
 		(at 86.36 127)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "29ac919b-9968-484f-bd80-35aa3b0a2db8")
+		(uuid "e0040f95-2657-409a-a573-b3796745657c")
 	)
 	(no_connect
 		(at 93.98 121.92)
-		(uuid "211fe3ed-de35-44fb-994c-8fcde21b24cf")
+		(uuid "a6188cae-dd05-4377-9898-85317314e2b7")
 	)
 	(wire
 		(pts
@@ -11500,7 +12029,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "850833fa-fbac-4637-bc2b-f02bc11ef5b9")
+		(uuid "b0eff137-e9b6-4bc2-8a3b-120b2a4b466e")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -11510,8 +12039,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "76c3a609-6878-48bb-858f-59ee3255e917")
-		(property "Reference" "#PWR20"
+		(uuid "eb69a7e1-a11a-420f-a6e7-a8ac95b446f7")
+		(property "Reference" "#PWR21"
 			(at 99.06 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11566,12 +12095,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b11c6f74-2f01-49dc-86b8-c673d7c65121")
+			(uuid "20d553a3-a3bb-465f-bbf1-c37e01ba47ae")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR20")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR21")
 					(unit 1)
 				)
 			)
@@ -11586,7 +12115,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "736fb270-9f3b-4f7f-8560-c196786b2b12")
+		(uuid "6aa88e71-9e32-41fb-a68d-121711419bcc")
 	)
 	(wire
 		(pts
@@ -11597,7 +12126,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1057e0c3-788c-4792-b5f8-93690f7396aa")
+		(uuid "ea9dc6cc-6ed8-4d38-82c2-b808e5b5fb9d")
 	)
 	(label "BAT+"
 		(at 63.5 149.86 0)
@@ -11607,7 +12136,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "635f7792-7eb6-4fcd-8c58-b4a4f6790a68")
+		(uuid "3d9a6f19-9859-485d-998f-3dfeab4b0a2a")
 	)
 	(wire
 		(pts
@@ -11618,7 +12147,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b0ffb16c-aaaf-459f-9088-1440829079e9")
+		(uuid "ce3387f7-04c7-428f-a1e3-54305ba947d5")
 	)
 	(label "VSW"
 		(at 106.68 137.16 0)
@@ -11628,7 +12157,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "33719cdb-e8f0-4665-a31c-1887a4bb7e73")
+		(uuid "67dc1a8a-8b27-476d-8a98-12c17e11e747")
 	)
 	(label "VSYS"
 		(at 66.04 137.16 0)
@@ -11638,7 +12167,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "bfeaffac-3c6b-43f7-b163-f0e695bcf14e")
+		(uuid "f331d9a1-17d8-41ab-a26b-0f1c15c1f7ad")
 	)
 	(text "USB varken: VBUS → D2 → VSYS, Q1 kapalı (Vgs ≈ 0)\nUSB yokken: R7 kapıyı GND'ye çeker,\nQ1 iletir, pil → VSYS (yük paylaşımı)\nSW2 → Q5 yük anahtarı: SW2 kapıyı GND'ye\nçekince Q5 iletir (VSYS → VSW, ~2 A).\nAnahtar akım taşımaz, yalnızca kapıyı sürer."
 		(exclude_from_sim no)
@@ -11651,7 +12180,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "81a3d3a3-d8f0-49d5-baeb-a0bf2798d350")
+		(uuid "7fab515d-dc26-45c5-bfd3-824a7d3f2d63")
 	)
 	(rectangle
 		(start 144.78 111.76)
@@ -11664,7 +12193,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "e93dc75c-6b0c-4c53-a7dc-857d75ab8aae")
+		(uuid "61ba79f1-1c5d-4b39-aae3-c9634fb0fa87")
 	)
 	(text "5 · 5 V BOOST (MT3608)"
 		(exclude_from_sim no)
@@ -11677,7 +12206,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "f65d895f-7260-484c-a078-da62153df592")
+		(uuid "6929252a-b058-4ebd-943a-edda8ea25c33")
 	)
 	(label "VSW"
 		(at 160.02 139.7 180)
@@ -11687,7 +12216,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "1f6bfcde-0c7d-4438-967d-f10d4e9e4c38")
+		(uuid "16f347c2-9705-4eed-87c0-87c41e47bac4")
 	)
 	(wire
 		(pts
@@ -11698,19 +12227,19 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6f27cf08-f4b2-4324-bb34-ec6a492d7a22")
+		(uuid "24abc55a-2c79-44dc-b68e-96fc267159d6")
 	)
 	(junction
 		(at 172.72 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "86a49516-9b1b-47c8-9da7-2adc28b3a6c2")
+		(uuid "2785b689-2487-455c-bf5f-dfb67fe4e858")
 	)
 	(junction
 		(at 187.96 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "454d0c2c-da7e-4652-a713-ae51ea6b4763")
+		(uuid "22e003a9-caef-4b19-a45e-0b2e748ed2f1")
 	)
 	(symbol
 		(lib_id "BatteryCharger:CL21A226MAQNNNE")
@@ -11720,7 +12249,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "fef6fa8b-810f-418f-95c1-0049cb1d9537")
+		(uuid "a14ddafd-0aa2-4fce-a970-7fbecdfb68e5")
 		(property "Reference" "C1"
 			(at 175.26 143.51 90)
 			(show_name no)
@@ -11810,14 +12339,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "d652e89f-832f-4509-b054-a0d8a26ab448")
+			(uuid "9ff95c37-7d98-4f6c-98b7-3c8aa5d83b3b")
 		)
 		(pin "2"
-			(uuid "aeae71b7-576e-4e4c-85f8-26ef1707cd4c")
+			(uuid "50af5971-3d53-49dd-95de-915894301587")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "C1")
 					(unit 1)
 				)
@@ -11833,7 +12362,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c9d3cfae-1682-4ed9-88d3-db03149d5293")
+		(uuid "caea44fd-b4d7-453e-9345-c2878d5b1d9d")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -11843,8 +12372,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "bc722ab5-7b7c-4784-9d39-dbfc7f23d3a3")
-		(property "Reference" "#PWR21"
+		(uuid "e6e22987-f88b-49de-b277-112b56e2cea5")
+		(property "Reference" "#PWR22"
 			(at 172.72 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11899,12 +12428,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f41d0475-4f03-4f7a-8faf-48462f8a63e3")
+			(uuid "36166cbe-12f4-4feb-9d89-a9a8831afaf7")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR21")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR22")
 					(unit 1)
 				)
 			)
@@ -11919,7 +12448,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4058b612-8368-4fe2-aaf3-03dbfb44e585")
+		(uuid "3e12a743-802b-4cb5-a0d7-d68c88bdbe0c")
 		(property "Reference" "U1"
 			(at 205.74 144.78 0)
 			(show_name no)
@@ -12007,26 +12536,26 @@
 			)
 		)
 		(pin "1"
-			(uuid "05acbf6d-61a2-4e8b-a4e9-5313a3a36516")
+			(uuid "84ae3bdd-8d97-4c46-a858-e6af7215ec78")
 		)
 		(pin "2"
-			(uuid "dbcf55cc-f9e2-4ad9-92b6-dfa02698b9bf")
+			(uuid "cb5810e5-c671-4647-ab2e-1eaab32b2849")
 		)
 		(pin "3"
-			(uuid "b3b2f699-0588-44a6-a5f0-fec9b65d3998")
+			(uuid "56d1bec9-e60e-486f-a58f-1c576a49fb25")
 		)
 		(pin "4"
-			(uuid "7d31fe0b-53f6-4a09-9570-2e49ca88c4fb")
+			(uuid "d632fbd9-c9a6-497d-986c-b5f05899005d")
 		)
 		(pin "5"
-			(uuid "509500ce-114e-49ab-be2c-1d6f4ee84556")
+			(uuid "bd6df32d-2003-4043-9e10-4544b8584c37")
 		)
 		(pin "6"
-			(uuid "f83e661e-972d-4cb3-b757-841c571096fb")
+			(uuid "7e91f2f9-5ede-44fa-8c3c-3c43c44684fc")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "U1")
 					(unit 1)
 				)
@@ -12042,7 +12571,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5b7d5feb-ef8f-479e-b8bf-f9f29b617db9")
+		(uuid "e21ad46c-aae9-45d5-a12a-49e6b8bcc870")
 	)
 	(wire
 		(pts
@@ -12053,7 +12582,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d5fa7c3e-e084-490e-953b-035fed20d70e")
+		(uuid "93b98bd5-acef-46a2-8f94-69ece3677939")
 	)
 	(wire
 		(pts
@@ -12064,7 +12593,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7cb9a048-f371-44ef-a4e4-7aeccc35d438")
+		(uuid "b75efc2f-b8ee-49d2-acd0-5b6a93bc2f9a")
 	)
 	(wire
 		(pts
@@ -12075,17 +12604,17 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b812b3d8-caeb-4f27-a838-b880d849dd67")
+		(uuid "123efd91-0563-4e83-b8d1-5e7d216d39c0")
 	)
 	(junction
 		(at 187.96 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "11dd947f-ee71-4005-b2e2-67c4448c1729")
+		(uuid "e3efc31b-86c4-4697-9b9f-9f8a90eb158e")
 	)
 	(no_connect
 		(at 195.58 149.86)
-		(uuid "4c44e6db-cf8a-4566-9e64-3c379a112aef")
+		(uuid "08b57360-734a-4045-9d04-c76f4b0cf66a")
 	)
 	(symbol
 		(lib_id "BatteryCharger:FXL0630-100-M")
@@ -12095,7 +12624,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e4657308-665b-4ee6-b049-7f8ab81d8cac")
+		(uuid "48ad7da4-4ae6-4915-b571-520a81506732")
 		(property "Reference" "L2"
 			(at 205.74 137.16 0)
 			(show_name no)
@@ -12183,14 +12712,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "127335dd-d942-4d02-914f-be50c23c8318")
+			(uuid "32f256cf-cdbb-4ab9-92b6-31a383f22dee")
 		)
 		(pin "2"
-			(uuid "3a0fa470-645b-4fba-8143-b00b9479aa3f")
+			(uuid "82232477-6191-4a57-977d-87712ae9a265")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "L2")
 					(unit 1)
 				)
@@ -12206,7 +12735,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d67a360d-13d5-4d81-9c43-4b72f17c0923")
+		(uuid "bbe81974-09f5-454a-b6a7-32816759d717")
 	)
 	(wire
 		(pts
@@ -12217,7 +12746,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8f9864d5-6702-4911-aa49-a8e3959d8608")
+		(uuid "33adfc0e-5951-47a7-9f05-7f098ae3ca2b")
 	)
 	(wire
 		(pts
@@ -12228,7 +12757,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "dc6fe6e4-cc63-44bb-b7ab-59b24712b8d5")
+		(uuid "4fc8f250-c74a-4350-b1cf-be27531b1151")
 	)
 	(symbol
 		(lib_id "BatteryCharger:SS34_C2837271")
@@ -12239,7 +12768,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e9ed5c72-8ff0-4ccf-9abc-4b7f67540552")
+		(uuid "b7b90715-5d4d-46c8-afe5-242f3ff3b107")
 		(property "Reference" "D1"
 			(at 231.14 134.62 0)
 			(show_name no)
@@ -12327,14 +12856,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "e381fd06-cd3a-4109-9ddb-4f6e6127106c")
+			(uuid "ec224295-2237-4eec-9858-2c522043744e")
 		)
 		(pin "2"
-			(uuid "40e5be72-5691-4b27-80c6-43397da90eba")
+			(uuid "c7e7e88c-4075-45bb-9d0d-be98dfb8e3a7")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "D1")
 					(unit 1)
 				)
@@ -12350,13 +12879,13 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "04448da2-789f-410b-9a3e-901e1665ff10")
+		(uuid "5c56fb3d-d277-4467-bd9e-cb289e188e49")
 	)
 	(junction
 		(at 220.98 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6eb31ee3-4022-4714-92c1-449fa010d407")
+		(uuid "38b6737e-79bc-4465-b4b4-964961ad2c34")
 	)
 	(wire
 		(pts
@@ -12367,25 +12896,25 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "47ac0c3b-badd-4cca-b674-dda3c7ee180e")
+		(uuid "d4e8e450-0d8a-45ef-a7b5-2fb3caef56e6")
 	)
 	(junction
 		(at 238.76 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "705faa4a-b1e8-4274-b518-2bfcc3199d73")
+		(uuid "0f2091fc-5e81-4d30-8349-6d008956ead9")
 	)
 	(junction
 		(at 248.92 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ba991f27-8262-4e25-8f47-a79a1e87da29")
+		(uuid "50f8c383-5a17-4016-94b6-6d5c3157a0f1")
 	)
 	(junction
 		(at 259.08 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "86360579-48f7-4cf5-9661-28636bacba10")
+		(uuid "ea1cae73-a84e-4371-8353-9b1d095737ca")
 	)
 	(symbol
 		(lib_id "BatteryCharger:0603WAF7502T5E")
@@ -12395,7 +12924,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "931a0ed3-60bb-4fb8-9ea2-c3c8d2975273")
+		(uuid "a0c6725f-2fbf-4cad-9375-ab25d0ba32cb")
 		(property "Reference" "R4"
 			(at 241.3 143.51 90)
 			(show_name no)
@@ -12485,14 +13014,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "7db493fe-40f0-4900-a259-683cbd1c7653")
+			(uuid "beb41108-c4e2-4fe7-b45c-a748bc37d2ad")
 		)
 		(pin "2"
-			(uuid "05aaff51-012a-4e1c-b0b3-fef42e898a28")
+			(uuid "832b3161-00be-4aa0-89a5-2696f15a339a")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R4")
 					(unit 1)
 				)
@@ -12507,7 +13036,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a4f919dc-cd80-4fe6-8ccf-204f5376fcf1")
+		(uuid "ef38b124-81d0-4e2a-a60d-1e45f2f69768")
 		(property "Reference" "R1"
 			(at 241.3 158.75 90)
 			(show_name no)
@@ -12597,14 +13126,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "3055a28e-b8c3-453d-ae20-49e7d772fad9")
+			(uuid "6f483a55-5947-4d35-9d17-773d85735303")
 		)
 		(pin "2"
-			(uuid "a554153a-ba5e-40f4-8b61-6d7eb5b2e369")
+			(uuid "d73952de-5d7c-49ce-bab8-7fbda0d5fef9")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R1")
 					(unit 1)
 				)
@@ -12620,7 +13149,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "dc6c4a53-7912-4952-be67-b77d1c04b464")
+		(uuid "5ed7f213-6a08-450a-9e38-2ca63d2ebcce")
 	)
 	(wire
 		(pts
@@ -12631,13 +13160,13 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ae2cf8d8-08ef-4664-88ab-8d162dd24cc0")
+		(uuid "ba492472-152a-4614-924d-4570232e633d")
 	)
 	(junction
 		(at 238.76 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d8685eef-eee9-4fcc-aee7-8ffb3415bad5")
+		(uuid "5a6ab85e-e0d8-4ec3-99bb-56df52d8231a")
 	)
 	(wire
 		(pts
@@ -12648,7 +13177,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a669548e-35e9-441d-b839-5c11e92ec3ed")
+		(uuid "3437d311-ad7c-43d4-9ae7-c90e4444b8af")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -12658,8 +13187,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "e2e6c2dd-db9e-47e2-82b2-5ca4352e433f")
-		(property "Reference" "#PWR22"
+		(uuid "ac757a71-aaa0-410c-af25-a1c7d4e211d9")
+		(property "Reference" "#PWR23"
 			(at 238.76 173.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12714,12 +13243,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "379cfc6d-a497-429e-9142-95607e8a304d")
+			(uuid "33958977-9828-42d9-b30e-de5f5dfd77ab")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR22")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR23")
 					(unit 1)
 				)
 			)
@@ -12734,7 +13263,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d2c17286-5137-4545-ae45-11df00c32eef")
+		(uuid "618694db-302b-4af3-b114-bd3e4d2bbfca")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -12744,8 +13273,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "fd12b9b8-bb97-4bac-b05e-1dfd7f7f6815")
-		(property "Reference" "#PWR23"
+		(uuid "217cd46c-8829-4e16-a303-7d0f51fc8c36")
+		(property "Reference" "#PWR24"
 			(at 224.79 152.4 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12801,12 +13330,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "761d52d1-a489-4bb5-bf3c-6ce807eb001e")
+			(uuid "7000ae0d-7740-4ea6-b81c-ba1ab79b6874")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR23")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR24")
 					(unit 1)
 				)
 			)
@@ -12820,7 +13349,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4622237e-0dd2-4b66-95de-0637e172cc68")
+		(uuid "04eb5971-4da6-43fd-b4da-4223539be7b9")
 		(property "Reference" "C3"
 			(at 251.46 143.51 90)
 			(show_name no)
@@ -12910,14 +13439,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "1a430e40-2b7d-4d3f-b17e-f90487b7f527")
+			(uuid "eeb98923-4ccf-4792-8266-6c1172547dc3")
 		)
 		(pin "2"
-			(uuid "bace3a45-e152-4ef2-aaea-3301f54a7e6a")
+			(uuid "df2f8865-3efd-4a3a-843d-fd0d190ffd94")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "C3")
 					(unit 1)
 				)
@@ -12933,7 +13462,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d8e41d8e-c424-47f8-95c2-0e8f753eb021")
+		(uuid "d758d3a0-88a8-4295-8c14-82712b3a5712")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -12943,8 +13472,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "5ddadcb1-5062-48f0-8c52-0179338311b7")
-		(property "Reference" "#PWR24"
+		(uuid "1f680a89-9d97-465c-a4e7-92bb4f8044ff")
+		(property "Reference" "#PWR25"
 			(at 248.92 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12999,12 +13528,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "71389460-f915-41c4-8346-2e1902d84776")
+			(uuid "2c9d4dfc-6087-4e4b-b1e1-4470b6d1cf31")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR24")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR25")
 					(unit 1)
 				)
 			)
@@ -13018,7 +13547,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ca7f941e-1314-4e51-8213-2b3efb2d6936")
+		(uuid "c83aca82-9221-4bf3-9f98-e6a8d9477c06")
 		(property "Reference" "C4"
 			(at 261.62 143.51 90)
 			(show_name no)
@@ -13108,14 +13637,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "9b49078d-aa49-4046-86e8-dea2d1f40047")
+			(uuid "76873fb5-628b-43af-afba-6a248b6141f8")
 		)
 		(pin "2"
-			(uuid "c8c68eb1-8e87-4056-bb9b-128da25e1bca")
+			(uuid "3d12f6b0-eeb8-47fe-9aea-30c8f883986a")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "C4")
 					(unit 1)
 				)
@@ -13131,7 +13660,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f81e457d-776f-4473-bbf3-2954ffe53f7c")
+		(uuid "940c33d9-ba6a-452f-8cf4-87677ad19a55")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -13141,8 +13670,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "cd6341d7-4dd4-4202-b5b1-38db4fd566a9")
-		(property "Reference" "#PWR25"
+		(uuid "7ba3733b-61ad-4c6d-9406-ac54f7601e51")
+		(property "Reference" "#PWR26"
 			(at 259.08 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13197,12 +13726,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e115a68e-c270-4a2a-993c-846897f19863")
+			(uuid "a48f77a0-2303-4acf-8fff-22991ab8f0cc")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR25")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR26")
 					(unit 1)
 				)
 			)
@@ -13216,8 +13745,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "8c34bb26-898e-44a0-910b-9e274b8a9b5e")
-		(property "Reference" "#PWR26"
+		(uuid "41817dfb-49d5-4fb5-b095-253b252dacc9")
+		(property "Reference" "#PWR27"
 			(at 266.7 143.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13272,12 +13801,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7a5d802d-9a5b-4331-8e0e-9f4792f7396e")
+			(uuid "5481e200-0d5c-4c20-9154-5ba6414fe138")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR26")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR27")
 					(unit 1)
 				)
 			)
@@ -13294,7 +13823,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "b6a7d0eb-49c2-45d3-9c5b-e75f6cf3b7e2")
+		(uuid "8fa5f52a-ed0c-4660-901a-8f41661f4ead")
 	)
 	(rectangle
 		(start 274.32 111.76)
@@ -13307,7 +13836,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "3f464e04-500b-4e8d-9fcd-dc8fc0df307a")
+		(uuid "5df6bbd3-e99b-44a5-976b-7dfdc08caa00")
 	)
 	(text "6 · 3.3 V LDO (AP2112K)"
 		(exclude_from_sim no)
@@ -13320,7 +13849,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "383308ca-0b0c-4ba8-875b-2d2ef13ef3b8")
+		(uuid "f2068667-b478-4af5-9cef-44739f88cc66")
 	)
 	(symbol
 		(lib_id "BatteryCharger:AP2112K-3.3TRG1")
@@ -13330,7 +13859,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bfde1230-8b2a-44eb-9656-fe2ed23859e7")
+		(uuid "25665a27-4693-4107-80db-d1d7b0ef3815")
 		(property "Reference" "U9"
 			(at 340.36 124.46 0)
 			(show_name no)
@@ -13418,23 +13947,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "db8ce354-ce7f-4ec1-b1e4-0bca8be28ddc")
+			(uuid "62f8d008-b7d9-4cf6-9a1e-57186a654124")
 		)
 		(pin "2"
-			(uuid "4aa3ff36-26c8-4240-a80a-98e1cf43af89")
+			(uuid "0b86dbd4-f6ac-465b-86d3-7d36cda59a83")
 		)
 		(pin "3"
-			(uuid "501d8d50-68eb-44b2-95bc-9df558085e71")
+			(uuid "5ca00c94-f8b8-42ff-8207-ca64de6f871d")
 		)
 		(pin "4"
-			(uuid "0760619b-889d-4c12-943b-3a1552d039de")
+			(uuid "c05b982c-12a2-4912-acf4-62612beaa39e")
 		)
 		(pin "5"
-			(uuid "5475c52b-1abf-4712-bda0-9b34891ae7dc")
+			(uuid "fcff9eb9-213a-4a20-b696-698109b662db")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "U9")
 					(unit 1)
 				)
@@ -13449,8 +13978,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "b4040c1d-c189-496e-b425-267f2ab9ac9b")
-		(property "Reference" "#PWR27"
+		(uuid "5433c494-d4da-45cf-ae3f-9d3a497b7ab3")
+		(property "Reference" "#PWR28"
 			(at 284.48 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13505,12 +14034,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d8bfcf99-f09c-4d49-bca6-365a84a76f85")
+			(uuid "a4cec267-c332-4d41-9cf5-00f8fd58d2e0")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR27")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR28")
 					(unit 1)
 				)
 			)
@@ -13525,25 +14054,25 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "297ce95f-feb3-4151-9158-aaa0153117d9")
+		(uuid "acd5930e-d593-4fe9-97f8-bbe46ae4eb2a")
 	)
 	(junction
 		(at 297.18 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "508b8145-b4ae-493e-8394-11c1bd1a4a1e")
+		(uuid "44e7c270-2de4-47e6-acab-6051cb55b46a")
 	)
 	(junction
 		(at 307.34 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6dc6d2d5-522c-4a8a-8def-5cd057ae3ccc")
+		(uuid "30101895-4a12-4fa9-ba28-c5a0ef817f94")
 	)
 	(junction
 		(at 320.04 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "41960992-269b-423c-849a-e9176814c38c")
+		(uuid "2c4f4723-425c-42a1-b6de-f3a21590c76a")
 	)
 	(symbol
 		(lib_id "BatteryCharger:CL21A106KAYNNNE")
@@ -13553,7 +14082,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7fe5595d-7d5a-45ed-b6a6-14a8cf2e5085")
+		(uuid "711445a0-6491-4c3c-85ce-3278f7823ef4")
 		(property "Reference" "C12"
 			(at 299.72 133.35 90)
 			(show_name no)
@@ -13643,14 +14172,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "2462b04d-e837-44c8-865f-554796b475e3")
+			(uuid "50291baf-dabc-46a6-89ac-97559f76847c")
 		)
 		(pin "2"
-			(uuid "f990adfd-79c2-4b8f-8fb1-02e9021a4c6a")
+			(uuid "54339da5-0893-46bc-af3d-91d2b5793311")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "C12")
 					(unit 1)
 				)
@@ -13666,7 +14195,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2bf52742-2663-434c-bef5-ffb67324a825")
+		(uuid "0f2db81a-a881-440f-a352-b177d5cd417e")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -13676,8 +14205,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "0f7e0a2a-9647-4d08-be50-5ffacbe566c2")
-		(property "Reference" "#PWR28"
+		(uuid "bc50cf7c-40f0-4a53-abac-100b75178c03")
+		(property "Reference" "#PWR29"
 			(at 297.18 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13732,12 +14261,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "2ac2438e-e768-48bb-ad89-1ee8edfed528")
+			(uuid "95ebd824-df98-466e-ac71-0cb44ae26ff0")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR28")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR29")
 					(unit 1)
 				)
 			)
@@ -13751,7 +14280,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5788f7d3-4456-41cd-9992-1931ac7ec2d7")
+		(uuid "d16dbfba-8d44-4efb-8d42-c5a926974a77")
 		(property "Reference" "C9"
 			(at 309.88 133.35 90)
 			(show_name no)
@@ -13841,14 +14370,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "aaa05da5-75dd-4b9c-aab8-621f140c06a5")
+			(uuid "11a115a7-2259-41d0-ac6e-48ef3706d435")
 		)
 		(pin "2"
-			(uuid "9519c4a7-7628-4206-bbeb-4418ceca4a8d")
+			(uuid "058a3c92-584e-4803-a5c5-b5b13a83ed44")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "C9")
 					(unit 1)
 				)
@@ -13864,7 +14393,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "dab2d0c7-30a9-4e06-909c-ca4dbf492f5d")
+		(uuid "d82c9191-5b9c-4787-a567-f7a1582b3265")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -13874,8 +14403,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "73172f07-c500-4f36-b5a5-df162f8cba4d")
-		(property "Reference" "#PWR29"
+		(uuid "23a01170-5d09-4e1d-9687-426f84a2fec8")
+		(property "Reference" "#PWR30"
 			(at 307.34 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13930,12 +14459,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "2a9c28cb-824c-4f9b-90b6-3b14478e26c4")
+			(uuid "bb91be13-f53c-43c6-9bf7-897d6bf7c210")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR29")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR30")
 					(unit 1)
 				)
 			)
@@ -13950,7 +14479,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e9466efe-8141-4456-bdac-ab4e8d63f760")
+		(uuid "7aaf4292-a97c-4855-b0b5-3ac635dfb24e")
 	)
 	(wire
 		(pts
@@ -13961,7 +14490,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c24fca34-0dff-4a73-a034-d07e4a10263e")
+		(uuid "5ee3b6a8-236d-4612-ab20-c6db6774b4b7")
 	)
 	(wire
 		(pts
@@ -13972,7 +14501,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "762bf858-a4cf-4718-93c2-de7a9c6f4af2")
+		(uuid "20cfdd8e-a5c1-4137-a014-569e170d79f4")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -13982,8 +14511,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "c4e66ec8-6836-4b90-bf63-169138970791")
-		(property "Reference" "#PWR30"
+		(uuid "4425e2b4-9ff2-4cfd-b4c8-aa795029e58b")
+		(property "Reference" "#PWR31"
 			(at 318.77 132.08 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14039,12 +14568,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e02df2b4-4bf8-484d-9628-1088a7aeb2a9")
+			(uuid "68a10677-496f-43b0-8db2-d7937445501f")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR30")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR31")
 					(unit 1)
 				)
 			)
@@ -14059,19 +14588,19 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6692dcbf-2970-44ce-9975-3b8ade870dff")
+		(uuid "90d80989-7696-4f85-abd9-ea16dd151ace")
 	)
 	(junction
 		(at 365.76 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6bc2a332-5d71-40fa-81da-b1b05e34a0c9")
+		(uuid "75cff27e-5680-4bc9-9737-5ed4e90bdb4d")
 	)
 	(junction
 		(at 375.92 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cf60b233-7a38-4df7-85b8-2369e98991ac")
+		(uuid "5f66f2f2-1b98-4446-9d46-7033c699a631")
 	)
 	(symbol
 		(lib_id "BatteryCharger:CL21A106KAYNNNE")
@@ -14081,7 +14610,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1b428023-0bb9-4ab3-94ff-0d90cea5b554")
+		(uuid "837fd789-c8bc-4a17-bcdd-9a28761dfb82")
 		(property "Reference" "C11"
 			(at 368.3 133.35 90)
 			(show_name no)
@@ -14171,14 +14700,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f63768b-bcbb-46ae-885b-f0d5c7105fa1")
+			(uuid "bec1d061-fbb4-442d-9ded-abc94dba2e93")
 		)
 		(pin "2"
-			(uuid "6509a2dd-84e6-4d70-b1e5-b2c01e8693f7")
+			(uuid "090fae12-0a90-4cc9-8a09-b0d92d174fc3")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "C11")
 					(unit 1)
 				)
@@ -14194,7 +14723,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "707736f1-20cc-4b28-b5e5-350888080be5")
+		(uuid "70d8243c-c53a-4fe0-9802-03b7241a72fe")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -14204,8 +14733,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "c5979135-5761-4e65-8565-861d47e7be21")
-		(property "Reference" "#PWR31"
+		(uuid "597bcf41-53d7-41f9-8cc6-32c1c823b309")
+		(property "Reference" "#PWR32"
 			(at 365.76 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14260,12 +14789,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "8ec77761-f90c-4b2c-befa-2b47fafc3ffb")
+			(uuid "4b3309f3-ddd2-4a01-b164-6da13b0a9831")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR31")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR32")
 					(unit 1)
 				)
 			)
@@ -14279,7 +14808,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "214422f1-b6d1-4022-bc1f-65e2dcd7c866")
+		(uuid "616818ad-d29d-4b4d-be52-14571389bda7")
 		(property "Reference" "C10"
 			(at 378.46 133.35 90)
 			(show_name no)
@@ -14369,14 +14898,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "7ad77f62-51b6-4782-9a9a-39983942c029")
+			(uuid "7bf164ac-1445-4f0f-b6bb-361bfd7dc543")
 		)
 		(pin "2"
-			(uuid "e83435bb-eb86-4683-b410-ca879b0f2cfa")
+			(uuid "0a3e5d5c-c7d2-41f0-ba98-c61a5071c648")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "C10")
 					(unit 1)
 				)
@@ -14392,7 +14921,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "834db8a3-007b-4ed9-bda6-a9d297b82f3a")
+		(uuid "f8bcbbdf-975d-4af8-a975-3f8b9427b227")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -14402,8 +14931,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "ec96c100-a393-4a94-9424-d9fd03014a2d")
-		(property "Reference" "#PWR32"
+		(uuid "b00a5bfb-db7d-48da-9ab0-32104a6ba086")
+		(property "Reference" "#PWR33"
 			(at 375.92 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14458,12 +14987,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "41e9b740-46b5-4cf0-a89d-6cfb3b2865e4")
+			(uuid "db86a3fb-c0e5-46ad-986b-976e7da5c6db")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR32")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR33")
 					(unit 1)
 				)
 			)
@@ -14477,8 +15006,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "03da9e8b-1922-426e-a582-2dd4e87b4874")
-		(property "Reference" "#PWR33"
+		(uuid "6b0babb2-caf0-48a2-a793-b0cba0632ac8")
+		(property "Reference" "#PWR34"
 			(at 391.16 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14533,12 +15062,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "46a71ee3-fbdc-4758-aaf2-73a182166b18")
+			(uuid "04586292-817a-4004-87ee-a1218c78d16f")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR33")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR34")
 					(unit 1)
 				)
 			)
@@ -14546,7 +15075,7 @@
 	)
 	(no_connect
 		(at 353.06 134.62)
-		(uuid "6fa8b333-1667-4db7-8254-872b73aac94e")
+		(uuid "0987ad5e-3fe3-4c19-80c0-4b06ec6cb2e6")
 	)
 	(text "Giriş +5V (boost çıkışı): pil 3.0 V'a inse de 3.3 V sabit kalır"
 		(exclude_from_sim no)
@@ -14559,7 +15088,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "8b5c1bf8-f6ee-4abe-bc77-4ca4ce779a9f")
+		(uuid "bc400269-37eb-47fd-9b2c-099cfdb7915f")
 	)
 	(rectangle
 		(start 274.32 157.48)
@@ -14572,7 +15101,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "151e3c44-d00f-4641-a6a9-dc6b29f7de7f")
+		(uuid "1fc51e79-038b-4ed3-b962-c26ae1dbb478")
 	)
 	(text "10 · PİL SICAKLIĞI (NTC)"
 		(exclude_from_sim no)
@@ -14585,7 +15114,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "527e68b2-1280-414e-b97a-6db7df0aa1b9")
+		(uuid "4496b63e-1a70-4203-ab22-e0beb489a776")
 	)
 	(symbol
 		(lib_id "power:VBUS")
@@ -14595,8 +15124,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "a2c8de42-c160-4c6b-bfa3-b5af4bd8f4da")
-		(property "Reference" "#PWR34"
+		(uuid "7c774a74-3f9d-4484-a2fa-e176026f1300")
+		(property "Reference" "#PWR35"
 			(at 284.48 173.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14651,12 +15180,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e84f5d5d-fe66-47f0-9f9f-df5e086c0573")
+			(uuid "fafe3bcc-78c5-4263-9fa9-beba92127cb0")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR34")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR35")
 					(unit 1)
 				)
 			)
@@ -14670,7 +15199,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "50ef622a-caba-4fbc-ae2c-25735fbabfa2")
+		(uuid "3ba9b4e6-0fa0-4837-b865-1a7d29882e94")
 		(property "Reference" "R18"
 			(at 294.64 167.64 0)
 			(show_name no)
@@ -14758,14 +15287,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "ced53f97-f541-4f3f-81b4-312e1e61a4a9")
+			(uuid "b0b4078b-1a18-4435-aa8d-aab32fc8ccb2")
 		)
 		(pin "2"
-			(uuid "65f71fcb-9ebe-426a-b7f8-96ccc92eee80")
+			(uuid "831f1d3d-8eb6-4fed-816f-96af306b6d36")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R18")
 					(unit 1)
 				)
@@ -14781,7 +15310,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "945d229b-e8b2-48b6-b7a2-e1796fce7383")
+		(uuid "97847032-1850-45ba-b44e-1162da37fab0")
 	)
 	(symbol
 		(lib_id "BatteryCharger:0603WAF1003T5E")
@@ -14791,7 +15320,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3c872ed3-7e70-4e70-998e-5ad00823fd32")
+		(uuid "8f987c65-1cde-43ec-a28c-eb991045a887")
 		(property "Reference" "R19"
 			(at 325.12 167.64 0)
 			(show_name no)
@@ -14879,14 +15408,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "de473a8d-e418-4018-aa2d-cd8fc4b76b71")
+			(uuid "5731a279-47e1-47d1-9f55-3afa9874ef83")
 		)
 		(pin "2"
-			(uuid "5f6a7de8-6834-4f39-a144-eef53529a881")
+			(uuid "b978586b-1d59-47f9-b1db-51cf68c723e4")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R19")
 					(unit 1)
 				)
@@ -14902,13 +15431,13 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c15fbd0c-7598-4c1d-b943-2d4ea4fba5fb")
+		(uuid "0d10b143-f99e-44f2-8a27-1b3b3f03d3c7")
 	)
 	(junction
 		(at 307.34 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d4b04e83-c7a9-4185-9fc7-e249360e18a9")
+		(uuid "9d9342fa-5363-4b0e-a16a-00c363442db8")
 	)
 	(wire
 		(pts
@@ -14919,7 +15448,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c25a1349-0a15-4fd4-ada8-380573e77e75")
+		(uuid "469797c4-6c2a-4c9a-a3b1-2cf52632c4a9")
 	)
 	(wire
 		(pts
@@ -14930,7 +15459,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0763caa9-62fc-49c9-95a6-0ed18dfd35e7")
+		(uuid "49c44b28-3810-49a9-9351-83f06f64f812")
 	)
 	(label "NTC"
 		(at 307.34 175.26 0)
@@ -14940,7 +15469,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "bd102c76-024e-41da-9ae7-c26dad2fef86")
+		(uuid "8d515986-3af2-4aa4-af21-dc086723eac0")
 	)
 	(wire
 		(pts
@@ -14951,19 +15480,19 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0a96436a-fbd3-4159-9700-2e8215bdaed0")
+		(uuid "9d24fc47-2aa8-43ab-8d2c-fd899e41a033")
 	)
 	(junction
 		(at 340.36 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3bc8cdfa-42ed-417c-80ab-067831ef96d0")
+		(uuid "59025449-9aa3-4afb-bdb5-a1acefa507af")
 	)
 	(junction
 		(at 350.52 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "20c44cce-3e22-4649-ac0c-19b31262a497")
+		(uuid "8704f64f-a628-4f4f-9706-50b0ba022515")
 	)
 	(symbol
 		(lib_id "BatteryCharger:0603WAF1503T5E")
@@ -14973,7 +15502,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1351ffb4-1440-4226-bb26-e3a9c8ed581d")
+		(uuid "0d071b7b-d8a6-404b-a9e3-57e4cc0e12e2")
 		(property "Reference" "R20"
 			(at 342.9 173.99 90)
 			(show_name no)
@@ -15063,14 +15592,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "a90d7781-1eae-4ae3-95ba-0a225e890608")
+			(uuid "14b9d3d4-0c77-4649-94f4-0eb648d0a3db")
 		)
 		(pin "2"
-			(uuid "13838bb1-f04d-4d87-be82-e80fa76637e6")
+			(uuid "245780df-d6d5-4280-914a-6d26dc2d72fc")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R20")
 					(unit 1)
 				)
@@ -15086,7 +15615,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "69dfaa53-e1ac-495c-becf-dca7e2127934")
+		(uuid "11a57d38-f2e2-4d71-a94f-eee18a989466")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -15096,8 +15625,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "61b5117f-500d-4b0a-9dac-d6422da478f1")
-		(property "Reference" "#PWR35"
+		(uuid "52b6d80d-0d57-4761-93de-71000def09b2")
+		(property "Reference" "#PWR36"
 			(at 340.36 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15152,12 +15681,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7748496d-aaa2-49fe-94ec-6a07682d3f35")
+			(uuid "4ccb5120-a8f0-4cac-bc98-dffb939f1085")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR35")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR36")
 					(unit 1)
 				)
 			)
@@ -15171,7 +15700,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ccc2893c-19ef-4570-956b-5c8836e48e48")
+		(uuid "ecd0d805-bde9-48e8-a8b7-b255596904b1")
 		(property "Reference" "C14"
 			(at 353.06 173.99 90)
 			(show_name no)
@@ -15261,14 +15790,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "fb21801a-a8c7-422b-aab3-3cd7f3f78fef")
+			(uuid "e33f4f44-a023-4989-8eaf-a79a38677de8")
 		)
 		(pin "2"
-			(uuid "569ea96f-56a2-4dae-80c5-b04c8aa047bf")
+			(uuid "aba44a0e-5827-4d84-b506-ecd108821e57")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "C14")
 					(unit 1)
 				)
@@ -15284,7 +15813,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4b67fd7a-5f30-4553-9d82-825d3714aceb")
+		(uuid "bd912c1d-4105-46e7-8574-f03ccffa993d")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -15294,8 +15823,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "aabca9a0-f056-4d39-add7-42d4f11adb0f")
-		(property "Reference" "#PWR36"
+		(uuid "b9619171-7e55-4455-938f-cd4aa68124c6")
+		(property "Reference" "#PWR37"
 			(at 350.52 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15350,12 +15879,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e6c7d666-8fe7-469b-acbb-f09eab9662d5")
+			(uuid "e95a1544-873f-4ccf-accf-c5dc265b9be1")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR36")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR37")
 					(unit 1)
 				)
 			)
@@ -15369,7 +15898,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "840115a8-37a1-4963-9232-e254f38914ad")
+		(uuid "7d4dd3ab-b5fe-447f-b48a-b9d94f6ef86e")
 	)
 	(text "NTC pil içinde (10k B3435), diğer ucu BAT−\nTP4056: 0–45 °C dışında şarjı durdurur\nBAT_TEMP = 0.6 × V_NTC (yalnızca USB takılıyken)"
 		(exclude_from_sim no)
@@ -15382,7 +15911,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "ce94c5c1-7577-4b15-bcb4-a49938464c15")
+		(uuid "4cac3377-2e62-4c7c-a724-6a7e032d9e87")
 	)
 	(rectangle
 		(start 15.24 195.58)
@@ -15395,7 +15924,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "596ef48e-31b1-4fb2-8193-92fd8db92a32")
+		(uuid "bb840972-346c-4ca0-82d6-76cc718f5d31")
 	)
 	(text "7 · PİL GERİLİMİ ÖLÇÜMÜ"
 		(exclude_from_sim no)
@@ -15408,7 +15937,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "61c5aec2-07bd-4716-b600-f0ba007d2b57")
+		(uuid "b0613575-ee7d-42d9-926b-54309e04ddfb")
 	)
 	(label "BAT+"
 		(at 30.48 210.82 180)
@@ -15418,7 +15947,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "d6fae50e-ba3b-4a3f-85f9-ac0ba897fcab")
+		(uuid "82c76f47-8cdb-491e-b557-69828ea7af4e")
 	)
 	(symbol
 		(lib_id "BatteryCharger:AO3401A")
@@ -15429,7 +15958,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "77eb2abe-4651-423b-8fa2-48ba535ded0e")
+		(uuid "434edaa7-cd19-48e5-9734-0a9ee7730e65")
 		(property "Reference" "Q4"
 			(at 55.88 219.71 0)
 			(show_name no)
@@ -15519,17 +16048,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "e095af1f-ee9b-4658-8793-88acebeb73ac")
+			(uuid "e56b2400-e21a-4046-9a6e-9af445fb9c07")
 		)
 		(pin "2"
-			(uuid "ac635d8f-500d-4ac5-9ac7-625a33a9bf8d")
+			(uuid "1e9976c5-6287-405b-90da-6b84d39e14ea")
 		)
 		(pin "3"
-			(uuid "7cb3e926-abdd-48e7-bd7f-2b480fadfed5")
+			(uuid "4a30a60b-8ae1-4c32-9502-5092c9d4d52b")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "Q4")
 					(unit 1)
 				)
@@ -15545,7 +16074,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e5dcd016-2d70-4833-a9a0-4c34929fa27c")
+		(uuid "31ce419b-9947-4f4e-81af-33212391a2a7")
 	)
 	(wire
 		(pts
@@ -15556,13 +16085,13 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "031b2ef4-e786-4b37-87fb-96ed58e0b161")
+		(uuid "4a20cef6-f444-4fe8-abec-063938f984c2")
 	)
 	(junction
 		(at 40.64 210.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2aaa4904-6f1a-4dfd-aaf1-df695d45dfb4")
+		(uuid "6bae9bff-c37a-4e61-bb31-086d0a734422")
 	)
 	(symbol
 		(lib_id "BatteryCharger:0603WAF1003T5E")
@@ -15572,7 +16101,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3d0770f4-4305-4ca0-9140-6eee451b99d3")
+		(uuid "a3553b6a-dbd2-445e-a48c-7f2505ae5ec3")
 		(property "Reference" "R13"
 			(at 43.18 214.63 90)
 			(show_name no)
@@ -15662,14 +16191,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "b92bb958-2d4f-454a-9171-7d92d40c482b")
+			(uuid "c8ca2095-e9a0-4f5a-8360-376855cda0e8")
 		)
 		(pin "2"
-			(uuid "0b1f4bfe-9f10-4cda-9b1f-71307b28ed13")
+			(uuid "70ef70a1-4113-4dee-b4fa-241f44d7596b")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R13")
 					(unit 1)
 				)
@@ -15685,7 +16214,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "42b59312-3959-4ee8-9704-9ffa92938870")
+		(uuid "ed184742-9be8-4e9a-bdcc-e9df0eace5e4")
 	)
 	(symbol
 		(lib_id "BatteryCharger:PJA3406-AU-R1-000A1")
@@ -15695,7 +16224,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "878b5320-fee1-4ab9-b07b-c1f2a9234917")
+		(uuid "10921ca4-b051-431b-a9be-3ac43baf6510")
 		(property "Reference" "Q2"
 			(at 44.45 237.49 0)
 			(show_name no)
@@ -15785,17 +16314,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "1fe3c695-d697-414b-9633-f92a3f2c23b1")
+			(uuid "59744b90-41c4-4579-bac0-e1a7fc1ab534")
 		)
 		(pin "2"
-			(uuid "6893012f-8725-476b-b88c-ba300b887ace")
+			(uuid "1a3b5ffe-a85d-453b-a484-6a7fa09bd717")
 		)
 		(pin "3"
-			(uuid "fe4112b8-caac-496e-bab2-ad182149a385")
+			(uuid "5619b3b0-42d5-4955-90a4-70bba1b3ace2")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "Q2")
 					(unit 1)
 				)
@@ -15811,13 +16340,13 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "cba8e618-12f1-4625-80e8-95636f2de2dc")
+		(uuid "4a6587e6-33d8-445b-a3f8-36b9f3e95b87")
 	)
 	(junction
 		(at 40.64 220.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "057be4d5-cea4-4456-acd9-5b1ac80bccc9")
+		(uuid "2a2a4680-0139-4b8e-923a-44189bf76171")
 	)
 	(wire
 		(pts
@@ -15828,7 +16357,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e4cd9aea-e70b-4d2b-b0e3-38e6ecde1ad0")
+		(uuid "e992e0b7-86db-443f-a0da-8d87b3826f82")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -15838,8 +16367,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "39b656a7-b998-423b-a0a2-fe261b267f91")
-		(property "Reference" "#PWR37"
+		(uuid "69be48b5-90dc-4ef4-b071-03f121e05f1a")
+		(property "Reference" "#PWR38"
 			(at 40.64 252.73 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15894,12 +16423,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "0edc6522-d0a0-479e-b810-b9db33aa485c")
+			(uuid "20f15eb5-8711-43d1-b2d2-c3736e24d593")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR37")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR38")
 					(unit 1)
 				)
 			)
@@ -15914,13 +16443,13 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0475ebe8-e146-4b7e-8d2a-9d152296afac")
+		(uuid "912fef9e-c7fb-4125-b18a-fa2c84cc64ed")
 	)
 	(junction
 		(at 30.48 238.76)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6849e7bd-24d7-448d-8861-1c785b1fd7ac")
+		(uuid "12024580-f6b6-4f9f-b273-fa2b19cecbbb")
 	)
 	(label "BAT_EN"
 		(at 25.4 238.76 180)
@@ -15930,7 +16459,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "0da60a93-2717-49da-9cf6-3eef6c55853a")
+		(uuid "f92e82f1-2089-498e-84f4-431cfac5c075")
 	)
 	(symbol
 		(lib_id "BatteryCharger:0603WAF1003T5E")
@@ -15940,7 +16469,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "722fccda-674b-4b58-81c8-7c7116ff7220")
+		(uuid "26f6de32-4073-42e3-be0f-65881ac12d14")
 		(property "Reference" "R14"
 			(at 33.02 242.57 90)
 			(show_name no)
@@ -16030,14 +16559,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "08a8fe68-27ae-4485-83ba-d65e386adfed")
+			(uuid "7eb3a21b-eeba-4b8a-94c4-1cf50e127ef9")
 		)
 		(pin "2"
-			(uuid "4196894c-de58-416a-b4c3-2aca0b9cb1b4")
+			(uuid "9d6fe280-0f9a-4ac0-92b1-a67a6cf91e07")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R14")
 					(unit 1)
 				)
@@ -16053,7 +16582,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7e1deeb3-cec6-4481-b7a6-84c62f024c19")
+		(uuid "e98def47-63b4-4f6a-8f10-cef3a18bc10f")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -16063,8 +16592,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "377abc2f-a0c7-42af-ac2d-ae38959a6364")
-		(property "Reference" "#PWR38"
+		(uuid "f7728dcb-ba4f-444b-a0c0-69c78aa3c0fe")
+		(property "Reference" "#PWR39"
 			(at 30.48 257.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16119,12 +16648,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "902f7ce0-9e97-4ee1-8da5-f72ae6795042")
+			(uuid "18f208d3-bf8f-4ded-8cc4-898cdb3bfb4c")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR38")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR39")
 					(unit 1)
 				)
 			)
@@ -16138,7 +16667,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "743e9ea7-21c8-4afd-983b-189d3f026e9e")
+		(uuid "9fbbebc5-ecfe-4899-8f07-f85c3ba65a61")
 		(property "Reference" "R10"
 			(at 55.88 229.87 90)
 			(show_name no)
@@ -16228,14 +16757,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "7676c99e-62e5-4500-a58e-7286bad58bed")
+			(uuid "7aa7fe70-c4dd-4964-90fb-0acc2718d887")
 		)
 		(pin "2"
-			(uuid "d3ea59d6-a6c0-4410-84d7-f88c42b32ebe")
+			(uuid "7faebf07-dca9-4c72-93fe-e778bc9ca619")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R10")
 					(unit 1)
 				)
@@ -16250,7 +16779,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4f02a9dc-94f6-45d3-a83b-3ea7315ae089")
+		(uuid "5a29d75c-d263-4be7-864d-27887e34fd7f")
 		(property "Reference" "R12"
 			(at 55.88 245.11 90)
 			(show_name no)
@@ -16340,14 +16869,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "c5b644ad-79f0-4789-b311-3bab008243fe")
+			(uuid "cd4aa696-7778-4a71-9271-71dbcbb80b53")
 		)
 		(pin "2"
-			(uuid "d6be48bd-c65b-45fa-82df-e8091029c3d5")
+			(uuid "4201cf96-59be-45a3-98bf-bac2b0622f30")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R12")
 					(unit 1)
 				)
@@ -16363,7 +16892,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "001231a1-574b-4485-8349-7c86eb01ff92")
+		(uuid "998c6e26-075e-44f6-8806-a8545a14851e")
 	)
 	(wire
 		(pts
@@ -16374,7 +16903,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5661693e-e815-410d-a0c4-a35da464a2a9")
+		(uuid "e37c7c01-0cab-4816-a77c-91501f67e100")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -16384,8 +16913,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "7c4ecddb-ff60-4232-9090-c4f5636500ce")
-		(property "Reference" "#PWR39"
+		(uuid "40f88b90-23cf-483e-8b98-b828ef9e7814")
+		(property "Reference" "#PWR40"
 			(at 53.34 260.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16440,12 +16969,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "072cc49f-09c4-4aaf-aecd-f67e96a9c4f7")
+			(uuid "7a14686b-51a0-490f-b902-b4cb27e91870")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR39")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR40")
 					(unit 1)
 				)
 			)
@@ -16460,19 +16989,19 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0f0d15a2-8a4c-4776-876e-54aa1e0109a9")
+		(uuid "df657014-c21c-45a4-9c06-f54bacd5dec1")
 	)
 	(junction
 		(at 53.34 238.76)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "93303539-5110-4a1f-a6b0-36f199fe2065")
+		(uuid "966d852c-e879-4704-a9c5-c1e34db69ea1")
 	)
 	(junction
 		(at 68.58 238.76)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0e05a0de-b067-4cbf-b48e-62fe75494b2a")
+		(uuid "3b9b6832-d7c5-436c-bae0-b610d8a3579f")
 	)
 	(symbol
 		(lib_id "BatteryCharger:CL10B104KB8NNNC")
@@ -16482,7 +17011,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "df6c181d-4614-4f3a-9aa8-942899caf563")
+		(uuid "d0d1ec52-a326-44bc-8399-0babab5f2f24")
 		(property "Reference" "C13"
 			(at 71.12 242.57 90)
 			(show_name no)
@@ -16572,14 +17101,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "fb1e30e1-2fce-4692-8646-3517168eda21")
+			(uuid "4fceaafe-bd96-4948-9d22-e472e9f3375f")
 		)
 		(pin "2"
-			(uuid "98482aec-2c28-4f73-825c-e313dd44fc87")
+			(uuid "a395c74e-3fa5-4697-bbbc-489e5b4401bc")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "C13")
 					(unit 1)
 				)
@@ -16595,7 +17124,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d2bb0435-3fca-4f4b-87cf-31ac9907ddb9")
+		(uuid "69acff96-6c5a-4d34-9888-59892c9e6d52")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -16605,8 +17134,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "b8833a02-4c9a-4efd-b612-5a3e32feca76")
-		(property "Reference" "#PWR40"
+		(uuid "710600bc-e71c-4437-a57e-e8bdca65244c")
+		(property "Reference" "#PWR41"
 			(at 68.58 257.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16661,12 +17190,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "69a48f38-009f-44cc-ac98-b7a1889504ba")
+			(uuid "843487aa-81bd-4664-8af5-6b7d4bc94797")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR40")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR41")
 					(unit 1)
 				)
 			)
@@ -16680,7 +17209,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "29b13d46-15d4-4e51-8692-158e6ec6a061")
+		(uuid "cd297247-4cbb-498a-b888-cc2d76f40335")
 	)
 	(text "BAT_EN = 1 → Q2 iletir, Q4 açılır, ölçüm yapılır\nBAT_EN = 0 → bölücü kapalı (pil boşalmaz)\nBAT_SENSE = VBAT / 2  (4.2 V → 2.1 V)"
 		(exclude_from_sim no)
@@ -16693,7 +17222,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "844adcce-fba6-417c-a252-ed4a3ed3506b")
+		(uuid "11c2237c-19fd-4bb3-a19e-be1fd1f5427d")
 	)
 	(rectangle
 		(start 144.78 195.58)
@@ -16706,7 +17235,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "8d915339-1dc9-4e46-8305-d99c1505eda9")
+		(uuid "7ba2daf3-92bd-4d42-a15e-a6ca3a8d2604")
 	)
 	(text "8 · İŞLEMCİ KONNEKTÖRÜ"
 		(exclude_from_sim no)
@@ -16719,7 +17248,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "fde5bb86-0a50-4322-bfd2-7f7cdaa153de")
+		(uuid "6750747e-4c23-4972-8514-c56cce6fdf5b")
 	)
 	(symbol
 		(lib_id "BatteryCharger:B8B-XH-A")
@@ -16730,7 +17259,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "92b99f44-1e2f-4df8-919b-93b62dda7190")
+		(uuid "822643c3-0c4a-40fa-b545-fa04dde8c5cc")
 		(property "Reference" "J1"
 			(at 162.56 223.52 0)
 			(show_name no)
@@ -16818,60 +17347,69 @@
 			)
 		)
 		(pin "1"
-			(uuid "db075357-19ef-4eee-960a-fae3520ee201")
+			(uuid "685227a1-72ee-436d-b934-4dc3ff56d048")
 		)
 		(pin "2"
-			(uuid "85bbd9be-f951-488f-9888-d5e49837493c")
+			(uuid "4cc84543-00cb-447d-abc3-494464b941b9")
 		)
 		(pin "3"
-			(uuid "79e54639-7a10-4260-8aca-90e8b7d7db1f")
+			(uuid "b66ccf55-ba83-4b6d-97c9-f98d6a3ac85e")
 		)
 		(pin "4"
-			(uuid "19b718f2-89c9-457e-b58c-abd3da958b5f")
+			(uuid "3f4bb92e-4cd7-4db0-93e7-ff5a5e156aab")
 		)
 		(pin "5"
-			(uuid "246fae43-83a8-401d-829c-7412ea0c765d")
+			(uuid "6fe32bed-a9e7-46eb-8f2f-02a330393857")
 		)
 		(pin "6"
-			(uuid "0584db86-23a4-46e7-9d84-626067afa984")
+			(uuid "6f6e36d9-18e6-44dc-8971-dd3ba0b547c0")
 		)
 		(pin "7"
-			(uuid "9edd6370-aa05-4a04-8faa-123a4bd651ee")
+			(uuid "57f532d7-55fd-4f6e-939a-f5d836fce9d2")
 		)
 		(pin "8"
-			(uuid "628576de-2604-4d70-bcd2-8f85071d8131")
+			(uuid "460d6c62-6c6d-4848-af53-b9b00a7b0077")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "J1")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 168.91 227.33)
-			(xy 171.45 227.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6d59d35-340b-4d74-b887-62d5417351d5")
-	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 171.45 227.33 270)
+		(lib_id "BatteryCharger:FSMD100-2920-R")
+		(at 179.07 227.33 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
+		(in_bom yes)
+		(on_board yes)
 		(dnp no)
-		(uuid "8e37e42e-c528-4092-b8ea-89e91d94d8ca")
-		(property "Reference" "#PWR41"
-			(at 167.64 227.33 90)
+		(uuid "3a4e896d-aaba-4851-9f14-b0ec4851fbe8")
+		(property "Reference" "F1"
+			(at 179.07 222.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.1A PTC"
+			(at 179.07 224.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "BatteryCharger:F2920"
+			(at 179.07 234.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -16881,19 +17419,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 175.26 227.33 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 227.33 90)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C6044766.pdf"
+			(at 179.07 237.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -16903,8 +17430,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 171.45 227.33 90)
+		(property "Description" "Polymeric PTC Resettable Fuse 33V 1.1A Surface Mount 2920"
+			(at 179.07 247.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -16914,8 +17441,30 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 171.45 227.33 90)
+		(property "Manufacturer" "FUZETEC"
+			(at 179.07 240.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "FSMD100-2920-R"
+			(at 179.07 242.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C6044766"
+			(at 179.07 245.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -16926,12 +17475,113 @@
 			)
 		)
 		(pin "1"
-			(uuid "2589572f-2b26-4a62-9426-d9a969de3bd7")
+			(uuid "159fbfc9-5a7d-40ed-9d9a-16373ae30809")
+		)
+		(pin "2"
+			(uuid "27f819b7-83d1-4690-b274-6057079e6d93")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR41")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 168.91 227.33)
+			(xy 173.99 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ccf67d8-4029-430a-82c5-b023a1e481c4")
+	)
+	(wire
+		(pts
+			(xy 184.15 227.33)
+			(xy 186.69 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4ff3ad9-6d5c-4ad3-8763-8659cdcd40b3")
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 186.69 227.33 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "58724f4e-1755-4af7-991b-cd766d35d453")
+		(property "Reference" "#PWR42"
+			(at 182.88 227.33 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 190.5 227.33 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 227.33 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 227.33 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 186.69 227.33 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1130b50-d0e0-45d7-b439-3fe5592ca2ef")
+		)
+		(instances
+			(project "battery-charger"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR42")
 					(unit 1)
 				)
 			)
@@ -16946,7 +17596,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4732eeaf-97e9-43f0-89da-1f321e47b04c")
+		(uuid "0b178b4c-c7da-432a-9328-8cc2b8f2d54e")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -16956,8 +17606,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "639d147f-c888-430c-9998-449ba2a297cc")
-		(property "Reference" "#PWR42"
+		(uuid "12157028-c16f-46eb-aae3-77e8b8707095")
+		(property "Reference" "#PWR43"
 			(at 167.64 229.87 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17013,12 +17663,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "94b5c412-adc1-46e7-9b03-c3009fb6f74f")
+			(uuid "aac0da23-7301-498d-b52f-831dda57c317")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR42")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR43")
 					(unit 1)
 				)
 			)
@@ -17033,7 +17683,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "cf20fcfd-6806-4a4d-9592-e896d8a747b5")
+		(uuid "c41d900b-8314-4ab4-afc4-5d0e9f0c120f")
 	)
 	(label "~{CHRG}"
 		(at 181.61 232.41 0)
@@ -17043,7 +17693,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "97470188-0efd-4d55-aa15-1ccc0df55e95")
+		(uuid "3bd7bec6-af9c-47d6-be60-ee0aac84bba0")
 	)
 	(wire
 		(pts
@@ -17054,7 +17704,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c05a4cac-649e-43b4-aa88-86aaea6a4a08")
+		(uuid "02d2614b-5435-4e30-89c3-d8eaf7f28d82")
 	)
 	(label "~{STDBY}"
 		(at 181.61 234.95 0)
@@ -17064,7 +17714,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "2a31a334-9f2c-4418-a29a-a945881d1b18")
+		(uuid "231bf35d-6576-4516-9003-8e7a2672dd72")
 	)
 	(wire
 		(pts
@@ -17075,7 +17725,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8e6b66d4-54a5-48d1-b752-cf78e06838d5")
+		(uuid "084d6a39-d02d-4b6e-b817-8d5b783f9c3c")
 	)
 	(label "BAT_SENSE"
 		(at 181.61 237.49 0)
@@ -17085,7 +17735,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "47f52dfe-f8d5-4cc2-bcc2-31ec16fa1c62")
+		(uuid "020f9a45-4c77-427c-b3e5-7862dab1e5be")
 	)
 	(wire
 		(pts
@@ -17096,7 +17746,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "dfd6e7cb-300b-46f2-b105-2042884d2d2f")
+		(uuid "f6017d3e-37da-497d-87af-dc93b3399a14")
 	)
 	(label "BAT_EN"
 		(at 181.61 240.03 0)
@@ -17106,7 +17756,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "8bd1f691-1947-41d1-9c53-b965cf208842")
+		(uuid "2dea9769-e27b-41ec-9429-7f1fa2b31439")
 	)
 	(wire
 		(pts
@@ -17117,7 +17767,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b309511c-f4e4-43e7-8706-e1561b173a90")
+		(uuid "068d0d45-8f62-4873-be16-a868b0bdd957")
 	)
 	(label "BAT_TEMP"
 		(at 181.61 242.57 0)
@@ -17127,7 +17777,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "eea89f2f-3e9e-408f-bb0c-144e5b731912")
+		(uuid "a2909fa2-cad2-47c4-a69e-bbad1122e007")
 	)
 	(wire
 		(pts
@@ -17138,7 +17788,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d04cd806-f9bc-4011-93f9-44d033891c71")
+		(uuid "b6d7b277-bc79-463c-9949-3646d9284abc")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -17148,8 +17798,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "1dd749ff-2052-4ac5-a516-6b632f79165f")
-		(property "Reference" "#PWR43"
+		(uuid "51bc39f7-cb34-4082-97b4-7bda48efdf0e")
+		(property "Reference" "#PWR44"
 			(at 177.8 245.11 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17205,12 +17855,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "1740010b-673c-4c02-a400-ed6e82cf0621")
+			(uuid "8243e2f6-0405-42d5-85b6-d9749b55cc70")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR43")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR44")
 					(unit 1)
 				)
 			)
@@ -17224,8 +17874,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "0694d152-9afb-4762-8bcd-21e65249142f")
-		(property "Reference" "#PWR44"
+		(uuid "1034bef9-74f7-4227-9f86-19dcde92950a")
+		(property "Reference" "#PWR45"
 			(at 228.6 226.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17280,12 +17930,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7f1214f8-035e-4e7d-bd38-c17b820f0903")
+			(uuid "9649e9d6-ecfd-41c1-8701-3c47ee42386e")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR44")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR45")
 					(unit 1)
 				)
 			)
@@ -17299,7 +17949,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "843c1b82-c302-4ca6-9b11-de839b6d529d")
+		(uuid "934a5cc0-2a86-4832-937e-fdc840375395")
 		(property "Reference" "R6"
 			(at 231.14 226.06 90)
 			(show_name no)
@@ -17389,14 +18039,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "710160cd-93c3-47e4-afc0-49b005cfda00")
+			(uuid "912bd801-9650-4eb2-9678-5a7b17e0e60a")
 		)
 		(pin "2"
-			(uuid "3d11feef-522e-4abf-baae-76d0925ffe82")
+			(uuid "643a8335-e642-42f6-9f1c-b6f2f4a0fa62")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R6")
 					(unit 1)
 				)
@@ -17411,7 +18061,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "53b2c0d5-68dc-4284-b626-a4c6f37bb56d")
+		(uuid "578c084f-ade8-4366-9fc7-7fbc2e4a397a")
 		(property "Reference" "R16"
 			(at 231.14 241.3 90)
 			(show_name no)
@@ -17501,14 +18151,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "8a1b2369-f78b-4499-aaf7-2099276486ad")
+			(uuid "20441fc7-85ba-4cac-97eb-309be0f7a063")
 		)
 		(pin "2"
-			(uuid "c1529b8e-d6bc-4764-b025-c0adc8a9a8f5")
+			(uuid "7c658de5-e283-4cea-a5a0-566f6598f2bc")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R16")
 					(unit 1)
 				)
@@ -17524,13 +18174,13 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "775ace10-21fd-421d-b318-fe7339358e4d")
+		(uuid "a8a674f3-ca0e-407e-964a-75609d57970c")
 	)
 	(junction
 		(at 228.6 234.95)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "77cda9e7-07fc-4fca-8bbd-1fe19d290d7a")
+		(uuid "112a3b67-8e25-4ebb-b41a-78ab81e118bd")
 	)
 	(wire
 		(pts
@@ -17541,7 +18191,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4cfbf4db-4762-4cbc-bbaf-4e740d46722c")
+		(uuid "5e8cab62-343e-4125-ae4a-2aa8c2e05599")
 	)
 	(label "~{CHRG}"
 		(at 231.14 234.95 0)
@@ -17551,7 +18201,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "38ca7498-812c-4aae-8492-221b8dc4332b")
+		(uuid "da4c7ecb-fa52-45c6-be4d-e53d610f9ecf")
 	)
 	(wire
 		(pts
@@ -17562,7 +18212,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9f21b023-b102-4fc2-9738-b3512428005e")
+		(uuid "e107c4ad-314d-4d3a-bc1b-7fe30f84d2f4")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -17572,8 +18222,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "687c88ee-b2b8-4cb8-b7c0-4e55e198f625")
-		(property "Reference" "#PWR45"
+		(uuid "1cd33321-c1d0-4b41-9358-ecd051b78b20")
+		(property "Reference" "#PWR46"
 			(at 228.6 256.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17628,12 +18278,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6cbbb8d4-d806-4cd9-bebd-735c4de7bd90")
+			(uuid "2385cea8-784a-4c93-97a0-df925fea9f65")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR45")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR46")
 					(unit 1)
 				)
 			)
@@ -17647,8 +18297,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "bbdbfd1a-84cf-4890-803f-d53409c2885f")
-		(property "Reference" "#PWR46"
+		(uuid "7d712356-392a-4170-83e5-612b30283110")
+		(property "Reference" "#PWR47"
 			(at 246.38 226.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17703,12 +18353,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "1cbd175f-3e5f-4cfd-94ee-e57907344a16")
+			(uuid "12d38841-bb1a-4352-9706-8c2d99c428d9")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR46")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR47")
 					(unit 1)
 				)
 			)
@@ -17722,7 +18372,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3b25e2f1-20f3-4f00-8cb9-8190dec4e8bf")
+		(uuid "34e7f832-c183-4e9e-8b3d-8bb661afd223")
 		(property "Reference" "R11"
 			(at 248.92 226.06 90)
 			(show_name no)
@@ -17812,14 +18462,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "912f9a02-5085-4761-b83f-f1df3db7b969")
+			(uuid "f668374b-ae8d-4294-b047-5f842ad08579")
 		)
 		(pin "2"
-			(uuid "355a200b-65b6-42b3-8769-5a769dc0adb0")
+			(uuid "7bd8695b-4dd0-4cc8-a292-73089b9d4653")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R11")
 					(unit 1)
 				)
@@ -17834,7 +18484,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "14451c9e-e3ce-49ef-aae8-49e7cd13e7e0")
+		(uuid "0614c60e-1e0d-49c4-bf42-dceea6fb16be")
 		(property "Reference" "R17"
 			(at 248.92 241.3 90)
 			(show_name no)
@@ -17924,14 +18574,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "fec575e7-5b73-420d-a05b-74f4ad56a1b3")
+			(uuid "bacb9749-ec92-4cc1-9dd2-38c603a588c5")
 		)
 		(pin "2"
-			(uuid "309e7bca-8d88-439d-9aac-68e1ee038974")
+			(uuid "8889e564-5b9c-4eb3-b495-00392d9e2b82")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "R17")
 					(unit 1)
 				)
@@ -17947,13 +18597,13 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f78f9d24-2e79-43b9-8b1b-1f063fb49410")
+		(uuid "c395efde-9852-473d-b857-ec645cb89d70")
 	)
 	(junction
 		(at 246.38 234.95)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a6f9238b-3188-45f5-9c29-51d3eb933aee")
+		(uuid "c1aa3f6d-5a96-45bd-9b6f-09d0a1689dd5")
 	)
 	(wire
 		(pts
@@ -17964,7 +18614,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "faa6b9ec-2439-4fc2-b288-82a15a825c8f")
+		(uuid "4cb006b0-b429-425b-8d40-2dcc89923c8e")
 	)
 	(label "~{STDBY}"
 		(at 248.92 234.95 0)
@@ -17974,7 +18624,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "05f0e8e9-dd4c-404c-88c4-74a0755192a5")
+		(uuid "b2c0a4b4-351a-4e2e-8edc-6f03da2e22e1")
 	)
 	(wire
 		(pts
@@ -17985,7 +18635,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "537dd9a1-b1a6-4835-b066-25e862469c5d")
+		(uuid "c865e853-4598-410e-8720-e3d8996a606a")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -17995,8 +18645,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "5a2b68a9-5e03-46fe-a4e5-c810a06cb3c3")
-		(property "Reference" "#PWR47"
+		(uuid "b65d456d-2df7-4182-b631-4764e0315c5d")
+		(property "Reference" "#PWR48"
 			(at 246.38 256.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18051,18 +18701,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "b3ecc6b3-e04c-4244-8184-0aad6e349861")
+			(uuid "6b8e8e24-4ae7-46ca-9e76-703f797ba71a")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR47")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR48")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(text "1  +5V        5 V çıkış (boost)\n2  +3V3       3.3 V çıkış (LDO)\n3  CHRG       açık-drain durum\n4  STDBY      açık-drain durum\n5  BAT_SENSE  analog, VBAT/2\n6  BAT_EN     yüksek = ölçümü aç\n7  BAT_TEMP   analog, pil sıcaklığı\n8  GND"
+	(text "1  +5V        5 V çıkış (boost, F1 1.1 A PTC)\n2  +3V3       3.3 V çıkış (LDO)\n3  CHRG       açık-drain durum\n4  STDBY      açık-drain durum\n5  BAT_SENSE  analog, VBAT/2\n6  BAT_EN     yüksek = ölçümü aç\n7  BAT_TEMP   analog, pil sıcaklığı\n8  GND"
 		(exclude_from_sim no)
 		(at 218.44 200.66 0)
 		(effects
@@ -18073,7 +18723,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "d168b8fa-8452-43e5-b3b5-ff0ee6fac0d2")
+		(uuid "26eb1240-5c71-4953-9833-bd69a5356a63")
 	)
 	(text "CHRG STDBY  durum\n  0     0    USB yok (pilden çalışıyor)\n  0     1    şarj oluyor\n  1     0    şarj tamam\n  1     1    USB var, pil yok / sıcaklık hatası\nÇekmeler VBUS'tan (15k/22k ≈ 3.1 V):\nUSB yokken hatlar 0 olur, TP4056'ya sızıntı olmaz"
 		(exclude_from_sim no)
@@ -18086,7 +18736,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "d72832ea-7d32-4b6f-8679-b8f19c3dbf56")
+		(uuid "a30d21bc-95e6-42e4-835a-2ef740021417")
 	)
 	(rectangle
 		(start 274.32 195.58)
@@ -18099,7 +18749,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "9c8edf53-282f-4e24-b620-ffcf5ae1adf9")
+		(uuid "402549d0-8ca6-4ee5-8e2c-94f37e2d28f0")
 	)
 	(text "9 · TEST NOKTALARI + MONTAJ"
 		(exclude_from_sim no)
@@ -18112,7 +18762,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "9131f1bf-cf33-4459-b89b-fa8eee319ff4")
+		(uuid "468c4981-9b98-4c93-9e03-cc4f6eb884ac")
 	)
 	(symbol
 		(lib_id "BatteryCharger:TestPoint")
@@ -18122,7 +18772,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7c241b31-2796-4291-92b0-ef04fc909cc9")
+		(uuid "b2b630bd-c566-4e5d-b65c-baa341ab251f")
 		(property "Reference" "TP1"
 			(at 289.56 209.55 0)
 			(show_name no)
@@ -18177,11 +18827,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "d651beee-4961-43fd-aeda-f304d157dcef")
+			(uuid "3c953991-e6e6-4428-8580-8d818900c7f6")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "TP1")
 					(unit 1)
 				)
@@ -18197,7 +18847,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8217619d-11f8-44cd-90f0-14daa15627ba")
+		(uuid "e90dc8d2-1c5b-4bdd-ba23-1cfa6623f378")
 	)
 	(symbol
 		(lib_id "power:VBUS")
@@ -18207,8 +18857,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "ada428ea-7d8f-43ac-9323-10a7ca47633d")
-		(property "Reference" "#PWR48"
+		(uuid "7660ceea-91ae-47eb-8a20-6da04e8c563c")
+		(property "Reference" "#PWR49"
 			(at 289.56 219.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18263,12 +18913,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ce6611ee-d676-492d-8932-d2dfca300d8f")
+			(uuid "63519121-ed25-4dcf-b043-c0f41d830398")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR48")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR49")
 					(unit 1)
 				)
 			)
@@ -18282,7 +18932,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a21c5768-2f48-4309-87b8-5e5bf432b8fd")
+		(uuid "e4357d63-bd2a-45bb-a54b-4b639158cc5c")
 		(property "Reference" "TP2"
 			(at 304.8 209.55 0)
 			(show_name no)
@@ -18337,11 +18987,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "0ea73b88-a679-4755-a33a-e80669ba34da")
+			(uuid "e15d5136-f49b-4d1f-b6f5-53342e21651d")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "TP2")
 					(unit 1)
 				)
@@ -18357,7 +19007,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "07bc0fbc-a040-499b-b6be-dadcc7c2aac1")
+		(uuid "a3bef608-e4c7-4d4e-b0e8-38970a9777b6")
 	)
 	(symbol
 		(lib_id "power:+5V")
@@ -18367,8 +19017,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "ee27d1fe-67a8-463d-9647-878aa9c64ec8")
-		(property "Reference" "#PWR49"
+		(uuid "20c5238f-8dcd-4e0a-a104-4a6348f9d108")
+		(property "Reference" "#PWR50"
 			(at 304.8 219.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18423,12 +19073,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "32df43df-7f25-458b-8cd5-fad1fabf180a")
+			(uuid "07e43bf3-d7f0-4d3b-b232-2b30f1e7884d")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR49")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR50")
 					(unit 1)
 				)
 			)
@@ -18442,7 +19092,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ca424315-1a8b-4922-84d4-6d2114ed1b23")
+		(uuid "09c4677c-8484-47b2-938e-6db37c3ee749")
 		(property "Reference" "TP3"
 			(at 320.04 209.55 0)
 			(show_name no)
@@ -18497,11 +19147,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "77e92b91-44bc-43d3-95c3-423e4196fc03")
+			(uuid "3365307b-8f9c-4003-8e8c-0ddf6fa417fc")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "TP3")
 					(unit 1)
 				)
@@ -18517,7 +19167,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c0fbacde-d4cd-4f2b-9202-b9d3db462f9a")
+		(uuid "d630b4c2-4e0a-4c7e-b0e8-c35f0a7ccc61")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -18527,8 +19177,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "9a449c84-3323-4810-b365-b14677401e0a")
-		(property "Reference" "#PWR50"
+		(uuid "43befdba-3b3b-4eba-9c64-c8ea4cbe5062")
+		(property "Reference" "#PWR51"
 			(at 320.04 219.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18583,12 +19233,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f5116169-0142-44f1-b684-d328bc79b746")
+			(uuid "ad5f3a77-4a35-4104-bf38-8cec5cb265ce")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR50")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR51")
 					(unit 1)
 				)
 			)
@@ -18602,7 +19252,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f93b6f20-669f-42f9-b6ae-74d00c2e760c")
+		(uuid "6165ffa2-1d11-49c5-b24b-c3a2b6a03bae")
 		(property "Reference" "TP4"
 			(at 335.28 209.55 0)
 			(show_name no)
@@ -18657,11 +19307,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "1355d89f-7f1f-4e8e-93ec-87e3e9808731")
+			(uuid "94d35c7e-4c49-422f-9d7d-93e628d37423")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "TP4")
 					(unit 1)
 				)
@@ -18677,7 +19327,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "55e52045-1691-4093-97c9-bb706bf42776")
+		(uuid "6e169462-44d5-4a48-85e4-3db641184e88")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -18687,8 +19337,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "e8d5cd5b-ff78-421c-9ee9-d7bfe3d25271")
-		(property "Reference" "#PWR51"
+		(uuid "e82134f6-1294-4627-adad-71271daca159")
+		(property "Reference" "#PWR52"
 			(at 335.28 227.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18743,12 +19393,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6ff8736a-aa85-4c03-9c94-ae4f2a966bc0")
+			(uuid "732028b5-bcb6-4059-bba9-38c3d6054477")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR51")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR52")
 					(unit 1)
 				)
 			)
@@ -18762,7 +19412,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2b9c00e0-5e77-4747-9992-e1c720faba28")
+		(uuid "a2d0223f-6cf7-4d38-8fba-5bb918cdf7b9")
 		(property "Reference" "TP5"
 			(at 350.52 209.55 0)
 			(show_name no)
@@ -18817,11 +19467,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "8a1330ef-5316-4eac-87f5-8c1faf7f6036")
+			(uuid "97520bd2-bf4d-45a6-a13b-413e50eaf74e")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "TP5")
 					(unit 1)
 				)
@@ -18837,7 +19487,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "3f939557-f4e1-464d-9d13-5ae0f5db32bf")
+		(uuid "17229ad6-be80-4ef1-a9d1-cf33c4d16749")
 	)
 	(label "BAT+"
 		(at 350.52 223.52 0)
@@ -18847,7 +19497,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "6bf19cdb-0bbe-4a71-803b-037074b5bda8")
+		(uuid "dcde888e-36f0-4165-9709-5784d7b2ec47")
 	)
 	(symbol
 		(lib_id "BatteryCharger:TestPoint")
@@ -18857,7 +19507,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "022fe7c0-5bc6-419a-a3a7-a8fa0ede190d")
+		(uuid "46f25383-cff6-422d-acb1-3441d5478d8c")
 		(property "Reference" "TP6"
 			(at 365.76 209.55 0)
 			(show_name no)
@@ -18912,11 +19562,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "f7b3d8d7-430f-42c5-bbad-954c5e1f606d")
+			(uuid "e9033c97-a51e-47c7-b004-86207fe856bc")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "TP6")
 					(unit 1)
 				)
@@ -18932,7 +19582,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a7615a26-8f17-429f-bdf5-7385a4011848")
+		(uuid "2a869fad-880f-45e5-a512-7dfe530f64a8")
 	)
 	(label "PROG"
 		(at 365.76 223.52 0)
@@ -18942,7 +19592,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "0cecbd4c-516c-441f-98e9-f20b5535680f")
+		(uuid "3238a542-d25f-4296-90a3-5acc2be0871f")
 	)
 	(symbol
 		(lib_id "BatteryCharger:MountingHole")
@@ -18952,7 +19602,7 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "b2d86b07-081d-4b02-8227-01befe2f2459")
+		(uuid "3e698290-6c5a-4eed-ae73-615d52c9f5ca")
 		(property "Reference" "H1"
 			(at 289.56 237.49 0)
 			(show_name no)
@@ -19008,7 +19658,7 @@
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "H1")
 					(unit 1)
 				)
@@ -19023,7 +19673,7 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "9b6b9e1a-97ee-4764-ade4-b16c9983508d")
+		(uuid "e315c4fa-d9fe-4318-aec9-2b03515ab24a")
 		(property "Reference" "H2"
 			(at 304.8 237.49 0)
 			(show_name no)
@@ -19079,7 +19729,7 @@
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "H2")
 					(unit 1)
 				)
@@ -19094,7 +19744,7 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "bb6526cf-96fe-412b-a019-d4a8f2afa75b")
+		(uuid "d73f6328-c0fc-4bb9-a3d8-fde80c1fe48d")
 		(property "Reference" "H3"
 			(at 320.04 237.49 0)
 			(show_name no)
@@ -19150,7 +19800,7 @@
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "H3")
 					(unit 1)
 				)
@@ -19165,7 +19815,7 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "9a3dbb24-2b1a-4ac5-a544-0af6f3c31ddb")
+		(uuid "b22aa293-4016-4e94-824e-dad9eb4b909f")
 		(property "Reference" "H4"
 			(at 335.28 237.49 0)
 			(show_name no)
@@ -19221,7 +19871,7 @@
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "H4")
 					(unit 1)
 				)
@@ -19236,7 +19886,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "05254a27-bbc1-4198-aa4f-3d4bb88f58bf")
+		(uuid "5f5f18fb-6311-440a-a01e-3f8fa74645c9")
 		(property "Reference" "#FLG01"
 			(at 383.54 206.375 0)
 			(show_name no)
@@ -19292,11 +19942,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "0c239ae2-3865-4937-b145-90a536268eec")
+			(uuid "54cbe965-dd00-41bd-8d5b-d9d20f248b1e")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#FLG01")
 					(unit 1)
 				)
@@ -19311,8 +19961,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "cd292151-925c-4c1b-a1f1-ca274b15d8ce")
-		(property "Reference" "#PWR52"
+		(uuid "7719aa27-bd3b-4976-a486-a794b9112e6f")
+		(property "Reference" "#PWR53"
 			(at 383.54 207.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19367,12 +20017,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "13010ae3-70f5-494d-a2b9-e1451b259d86")
+			(uuid "3ef2e633-368e-45a0-a5e2-83ac8f01c455")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR52")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR53")
 					(unit 1)
 				)
 			)
@@ -19387,7 +20037,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f41dbea5-fd26-4976-8fdc-c668fc6b4105")
+		(uuid "5885b7a7-dd03-4cdd-ad7c-64116ad2f4b2")
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -19397,7 +20047,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "839a1150-dd9b-4e18-baf2-eed89f7c5637")
+		(uuid "8cfeab8f-8d97-4fb7-b4fa-e598f84b2d94")
 		(property "Reference" "#FLG02"
 			(at 383.54 221.615 0)
 			(show_name no)
@@ -19453,11 +20103,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "a4d1efa6-9a1c-4da8-abad-d1715139410f")
+			(uuid "4ae1cf0a-60a7-4a6c-81b2-f58749a4f85a")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#FLG02")
 					(unit 1)
 				)
@@ -19472,8 +20122,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "9bd0b68d-d43f-4d45-831e-0010d59bd496")
-		(property "Reference" "#PWR53"
+		(uuid "afeb9315-17c8-4564-be01-e4e83def057b")
+		(property "Reference" "#PWR54"
 			(at 383.54 229.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19528,12 +20178,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "1d018f58-3d71-4bb7-81e1-29181839d481")
+			(uuid "1d48ca28-723b-4dff-965f-09e494facf54")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR53")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR54")
 					(unit 1)
 				)
 			)
@@ -19547,7 +20197,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "d78dee83-f1b9-42ff-b30c-fb236cfdb58f")
+		(uuid "b2f08953-66ff-4230-8d86-8fbd8bba2c58")
 		(property "Reference" "#FLG03"
 			(at 396.24 206.375 0)
 			(show_name no)
@@ -19603,11 +20253,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "670eeee0-a35d-4845-b6b3-052551b94692")
+			(uuid "3694e852-9b93-4745-802e-a8410d39ab7d")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#FLG03")
 					(unit 1)
 				)
@@ -19622,8 +20272,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "d4de3806-7fc3-4cbf-a6e7-c111a7a0d66c")
-		(property "Reference" "#PWR54"
+		(uuid "bc89d1be-a4ea-491c-a2fe-4ee314739bbe")
+		(property "Reference" "#PWR55"
 			(at 396.24 207.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19678,12 +20328,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a66563b6-5a58-49b0-b662-51f6920a9120")
+			(uuid "d597f899-a806-4bcc-bf5f-d33cf66b7078")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR54")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR55")
 					(unit 1)
 				)
 			)
@@ -19698,7 +20348,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "3e8a4526-d94e-4bdc-85a4-df62536da536")
+		(uuid "c16c92f0-973c-43a4-8ad8-37a017c39bf8")
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -19708,7 +20358,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "b3aaf72f-3710-425b-836a-15480008e8a9")
+		(uuid "b84a3200-6722-41ed-a0d6-0c53d2bc04cb")
 		(property "Reference" "#FLG04"
 			(at 396.24 221.615 0)
 			(show_name no)
@@ -19764,11 +20414,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "fb4bbc68-bd25-4516-b72a-b91c911f2e87")
+			(uuid "0f5e17f7-e044-4d5e-94fa-d50c4bb6e250")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
 					(reference "#FLG04")
 					(unit 1)
 				)
@@ -19783,8 +20433,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "2fb009f1-92b4-4a2b-bb7b-af75d33b7d2f")
-		(property "Reference" "#PWR55"
+		(uuid "fc2abb1c-bd6e-42b8-b5ac-68b5764a7771")
+		(property "Reference" "#PWR56"
 			(at 396.24 222.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19839,12 +20489,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ebc30dce-b270-4442-86e7-bd737fa00dec")
+			(uuid "93572554-0158-480e-b4c0-e2dd6653debc")
 		)
 		(instances
 			(project "battery-charger"
-				(path "/81a2ecc2-9de8-416c-994c-a6ec0442bc68"
-					(reference "#PWR55")
+				(path "/1f71121e-e061-4750-970f-3bcb35e8f893"
+					(reference "#PWR56")
 					(unit 1)
 				)
 			)
@@ -19859,7 +20509,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "06f8933a-e916-48b8-aec6-1b36dfcc79aa")
+		(uuid "678f12cc-f52a-44a7-8939-fdc4e05a56ce")
 	)
 	(sheet_instances
 		(path "/"

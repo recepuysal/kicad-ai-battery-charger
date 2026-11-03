@@ -30,7 +30,8 @@ Devre önce EasyEDA'da elle çizildi. Ardından bir yapay zekâ asistanı
 |---|---|
 | **Giriş** | USB-C (5.1 kΩ CC dirençleri, her USB-C şarj aletiyle çalışır), ESD koruması |
 | **Şarj** | TP4056, **1 A**, 4.2 V; 0–45 °C dışında şarj durur (pil NTC'si) |
-| **Koruma** | DW01A + FS8205A: aşırı şarj 4.3 V, aşırı deşarj 2.4 V, aşırı akım / kısa devre |
+| **Koruma** | Opsiyonel DW01A + FS8205A (aşırı şarj 4.3 V, aşırı deşarj 2.4 V, aşırı akım / kısa devre); varsayılan olarak takılmaz, aşağıya bakın |
+| **Çıkış sigortası** | Konnektörün 5 V pininde 1.1 A kendini sıfırlayan PTC (F1) |
 | **Güç yolu** | Yük paylaşımı: USB takılıyken USB'den çalışır, USB çekilince kesintisiz pile geçer |
 | **Aç/kapa** | Sürgü anahtar bir P-MOSFET yük anahtarını sürer; anahtardan yük akımı geçmez |
 | **5 V çıkış** | MT3608 boost, **1 A'e kadar**, pil 3.0 V'a inse de 5 V kalır |
@@ -54,7 +55,7 @@ Devre önce EasyEDA'da elle çizildi. Ardından bir yapay zekâ asistanı
 
 | Pin | Sinyal | Açıklama |
 |---|---|---|
-| 1 | +5V | 5 V çıkış (boost) |
+| 1 | +5V | 5 V çıkış (boost, 1.1 A PTC sigorta F1 üzerinden) |
 | 2 | +3V3 | 3.3 V çıkış (LDO) |
 | 3 | ~CHRG | Şarj durumu, aşağıdaki tabloya bakın |
 | 4 | ~STDBY | Şarj durumu, aşağıdaki tabloya bakın |
@@ -77,6 +78,16 @@ olmadığını da söyler:
 
 `1 = BAT+`, `2 = NTC (10 k, B3435)`, `3 = BAT−`. Pin sırası pil paketine göre değişir;
 **takmadan önce kendi pilinizle karşılaştırın.**
+
+### Kart üstü pil koruması (opsiyonel)
+
+Tasarım kendi koruma devresi olan (devreli) piller için yapıldı. Kart üstündeki koruma **DNP**
+(takılmaz) olarak işaretli; BAT− ile GND arasını 0 Ω'luk R21 köprüler.
+
+| Pil | Takılır | Takılmaz |
+|---|---|---|
+| Korumalı pil (varsayılan) | R21 (0 Ω) | U2, Q3, R5, C7, R8 |
+| Korumasız çıplak hücre | U2, Q3, R5, C7, R8 | **R21** (ikisi asla birlikte takılmaz) |
 
 ## Kullanım notları
 

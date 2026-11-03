@@ -17,9 +17,9 @@ VF = {"Reference": (2.54, -1.27, "left"), "Value": (2.54, 1.27, "left")}
 HF = {"Reference": (0, -2.54, None), "Value": (0, 2.54, None)}
 
 
-def vpart(lib, ref, x, ytop, val):
+def vpart(lib, ref, x, ytop, val, dnp=False):
     """Ustu ytop'ta olan dikey 2 pinli parca. (ust, alt) pinlerini dondurur."""
-    p = S.place("LCSC:" + lib, ref, x, ytop + 5.08, val, rot=90, fields=VF)
+    p = S.place("LCSC:" + lib, ref, x, ytop + 5.08, val, rot=90, fields=VF, dnp=dnp)
     return p["2"], p["1"]
 
 
@@ -78,17 +78,17 @@ S.note("R9 (PROG) → şarj akımı: 1.2k ≈ 1 A\n2k ≈ 580 mA · 3k ≈ 400 m
 S.note("~{CHRG} / ~{STDBY}: açık-drain çıkış,\nçekme dirençleri blok 8'de", 210.82, 86.36)
 
 # =================================================================== 3 PIL + KORUMA
-S.block("3 · PİL + KORUMA (DW01A + FS8205A)", 274.32, 20.32, 403.86, 106.68)
+S.block("3 · PİL + KORUMA (DW01A + FS8205A, opsiyonel)", 274.32, 20.32, 403.86, 106.68)
 J7 = S.place("LCSC:B3B-XH-A", "J7", 289.56, 58.42, "PİL 3P", rot=270,
              fields={"Reference": (-2.54, -6.35, None), "Value": (-2.54, 6.35, None)})
 L(J7["1"], "BAT+", 5.08)
 L(J7["2"], "NTC", 5.08)
 L(J7["3"], "BAT-", 5.08)
-t, b = vpart(C10U, "C6", 287.02, 71.12, "10uF"); L(t, "BAT+"); P("GND", b)
-U2 = S.place("LCSC:DW01A_C351410", "U2", 345.44, 45.72, "DW01A", mirror="y",
+t, b = vpart(C10U, "C6", 304.8, 66.04, "10uF"); L(t, "BAT+"); P("GND", b)
+U2 = S.place("LCSC:DW01A_C351410", "U2", 345.44, 45.72, "DW01A", mirror="y", dnp=True,
              fields={"Reference": (0, -7.62, None), "Value": (0, 7.62, None)})
-Q3 = S.place("LCSC:FS8205A_C2830320", "Q3", 345.44, 81.28, "FS8205A", mirror="x",
-             fields={"Reference": (0, -7.62, None), "Value": (0, 7.62, None)})
+Q3 = S.place("LCSC:FS8205A_C2830320", "Q3", 345.44, 81.28, "FS8205A", mirror="x", dnp=True,
+             fields={"Reference": (0, -8.89, None), "Value": (0, -6.35, None)})
 # OC -> G2 (ic), OD -> G1 (dis)
 W(U2["3"], (363.22, U2["3"][1]), (363.22, Q3["4"][1]), Q3["4"])
 W(U2["1"], (368.3, U2["1"][1]), (368.3, Q3["6"][1]), Q3["6"])
@@ -98,14 +98,15 @@ L(U2["6"], "BAT-", 2.54)
 vx = U2["5"][1]
 W(U2["5"], (312.42, vx))
 J(325.12, vx)
-R5 = S.place("LCSC:" + R100, "R5", 307.34, vx, "100R", fields=HF)
+R5 = S.place("LCSC:" + R100, "R5", 307.34, vx, "100R", fields=HF, dnp=True)
 L(R5["1"], "BAT+", 2.54)
-t, b = vpart(C100N, "C7", 325.12, vx, "100nF"); L(b, "BAT-")
+t, b = vpart(C100N, "C7", 325.12, vx, "100nF", dnp=True); L(b, "BAT-")
+t, b = vpart("0603WAF0000T5E", "R21", 320.04, 66.04, "0R"); L(t, "BAT-"); P("GND", b)
 P("GND", Q3["3"])
 L(Q3["1"], "BAT-", 2.54)
 NC(Q3["2"]); NC(Q3["5"])
-t, b = vpart(R1K, "R8", 381.0, 71.12, "1k"); L(t, "DW_CS"); P("GND", b)
-S.note("J7: 1 = BAT+  2 = NTC  3 = BAT− (pil kablosuna göre kontrol!)\nBAT- = pil eksi ucu, GND = koruma sonrası (P-)\nDW01A: 4.3 V aşırı şarj · 2.4 V aşırı deşarj\naşırı akım / kısa devre kesmesi", 279.4, 90.17)
+t, b = vpart(R1K, "R8", 381.0, 71.12, "1k", dnp=True); L(t, "DW_CS"); P("GND", b)
+S.note("Korumalı (devreli) pil: U2, Q3, R5, C7, R8 takılmaz (DNP), R21 = 0Ω köprü\nKorumasız pil: U2, Q3, R5, C7, R8 takılır, R21 SÖKÜLÜR (ikisi birlikte olmaz!)\nJ7: 1 = BAT+  2 = NTC  3 = BAT− (pil kablosuna göre kontrol!)\nBAT- = pil eksi ucu, GND = koruma sonrası (P-)\nDW01A: 4.3 V aşırı şarj · 2.4 V aşırı deşarj\naşırı akım / kısa devre kesmesi", 279.4, 87.63)
 
 # =================================================================== 4 GUC YOLU
 S.block("4 · GÜÇ YOLU + ANAHTAR", 15.24, 111.76, 139.7, 190.5)
@@ -253,7 +254,10 @@ S.note("BAT_EN = 1 → Q2 iletir, Q4 açılır, ölçüm yapılır\nBAT_EN = 0 �
 S.block("8 · İŞLEMCİ KONNEKTÖRÜ", 144.78, 195.58, 269.24, 279.4)
 J1 = S.place("LCSC:B8B-XH-A", "J1", 162.56, 236.22, "B8B-XH-A", mirror="y",
              fields={"Reference": (0, -12.7, None), "Value": (0, 12.7, None)})
-P("+5V", J1["1"])
+F1 = S.place("LCSC:FSMD100-2920-R", "F1", 179.07, J1["1"][1], "1.1A PTC",
+             fields={"Reference": (0, -5.08, None), "Value": (0, -2.54, None)})
+W(J1["1"], F1["1"])
+P("+5V", F1["2"])
 P("+3V3", J1["2"])
 for pin, net in (("3", "~{CHRG}"), ("4", "~{STDBY}"), ("5", "BAT_SENSE"), ("6", "BAT_EN"), ("7", "BAT_TEMP")):
     L(J1[pin], net, 12.7)
@@ -268,7 +272,7 @@ for rt, rb, x, net in (("R6", "R16", 228.6, "~{CHRG}"), ("R11", "R17", 246.38, "
     W((x, 234.95), (x + 2.54, 234.95))
     L((x + 2.54, 234.95, 180), net, 0)
     P("GND", b2)
-S.note("1  +5V        5 V çıkış (boost)\n2  +3V3       3.3 V çıkış (LDO)\n"
+S.note("1  +5V        5 V çıkış (boost, F1 1.1 A PTC)\n2  +3V3       3.3 V çıkış (LDO)\n"
        "3  CHRG       açık-drain durum\n4  STDBY      açık-drain durum\n"
        "5  BAT_SENSE  analog, VBAT/2\n6  BAT_EN     yüksek = ölçümü aç\n"
        "7  BAT_TEMP   analog, pil sıcaklığı\n8  GND", 218.44, 200.66)

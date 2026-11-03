@@ -65,7 +65,7 @@ class Sheet:
         return (a + rot) % 360
 
     # ------------------------------------------------------------ yerlestir
-    def place(self, lib_id, ref, x, y, value=None, rot=0, mirror=None, fields=None, props=None):
+    def place(self, lib_id, ref, x, y, value=None, rot=0, mirror=None, fields=None, props=None, dnp=False):
         s, pins = self.lib_sym(lib_id)
         if ref.startswith("#"):
             self.cnt[ref] = self.cnt.get(ref, 0) + 1
@@ -108,7 +108,7 @@ class Sheet:
             inst.append(["mirror", mirror])
         virt = ref.startswith("#") or lib_id.endswith(":MountingHole")
         inst += [["unit", "1"], ["exclude_from_sim", "no"], ["in_bom", "no" if virt else "yes"],
-                 ["on_board", "no" if ref.startswith("#") else "yes"], ["dnp", "no"], ["uuid", U()]]
+                 ["on_board", "no" if ref.startswith("#") else "yes"], ["dnp", "yes" if dnp else "no"], ["uuid", U()]]
         inst += out_props
         inst += [["pin", _q(n), ["uuid", U()]] for n in pins]
         inst.append(["instances", ["project", _q(self.name), ["path", _q("/" + self.root),

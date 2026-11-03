@@ -33,7 +33,8 @@ The schematic notes are written in Turkish.
 |---|---|
 | **Input** | USB-C (5.1 kΩ CC pull-downs, works with any USB-C charger), ESD protection |
 | **Charging** | TP4056, **1 A**, 4.2 V; charging stops outside 0–45 °C (battery NTC) |
-| **Protection** | DW01A + FS8205A: over-charge 4.3 V, over-discharge 2.4 V, over-current / short |
+| **Protection** | Optional DW01A + FS8205A (over-charge 4.3 V, over-discharge 2.4 V, over-current / short), not fitted by default, see below |
+| **Output fuse** | 1.1 A resettable PTC (F1) on the connector's 5 V pin |
 | **Power path** | Load sharing: runs from USB when plugged in, switches to the battery seamlessly |
 | **On/off** | Slide switch drives a P-MOSFET load switch, so the switch carries no load current |
 | **5 V output** | MT3608 boost, **up to 1 A**, stays at 5 V down to a 3.0 V battery |
@@ -57,7 +58,7 @@ The schematic notes are written in Turkish.
 
 | Pin | Signal | Description |
 |---|---|---|
-| 1 | +5V | 5 V output (boost) |
+| 1 | +5V | 5 V output (boost, through the 1.1 A PTC fuse F1) |
 | 2 | +3V3 | 3.3 V output (LDO) |
 | 3 | ~CHRG | Charge status, see table below |
 | 4 | ~STDBY | Charge status, see table below |
@@ -80,6 +81,16 @@ whether USB is present:
 
 `1 = BAT+`, `2 = NTC (10 k, B3435)`, `3 = BAT−`. Pin order differs between battery packs, so
 **check yours before plugging it in.**
+
+### On-board battery protection (optional)
+
+The design targets packs with their own protection circuit, so the on-board protection is marked
+**DNP** (do not populate) and the 0 Ω resistor R21 bridges BAT− to GND.
+
+| Battery | Fit | Do not fit |
+|---|---|---|
+| Protected pack (default) | R21 (0 Ω) | U2, Q3, R5, C7, R8 |
+| Bare cell, no protection | U2, Q3, R5, C7, R8 | **R21** (never fit both) |
 
 ## Usage notes
 
