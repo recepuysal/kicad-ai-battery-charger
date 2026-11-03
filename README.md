@@ -10,8 +10,9 @@ battery telemetry</b>, whose schematic was drawn in <b>KiCad 10 by an AI assista
 ![Schematic](docs/schematic.png)
 
 > **Status:** schematic complete. ERC is clean and every connection was checked automatically against
-> the reference design. PCB layout has not started yet, and **the design has not been tested on
-> hardware yet**.
+> the intended connection list ([`scripts/verify_netlist.py`](scripts/verify_netlist.py)). That check
+> shows the schematic matches the intent; it does not prove the intent itself is right. PCB layout
+> has not started yet, and **the design has not been tested on hardware yet**.
 
 ## About the project
 
@@ -83,6 +84,10 @@ whether USB is present:
 `1 = BAT+`, `2 = NTC (10 k, B3435)`, `3 = BAT−`. Pin order differs between battery packs, so
 **check yours before plugging it in.**
 
+**Battery without an NTC (2-wire packs):** fit R24 (10 k, DNP by default). Without it the TP4056
+TEMP pin is pulled up to VBUS, reads as a temperature fault and **charging never starts**. With
+R24 fitted, the temperature cut-off is disabled and BAT_TEMP no longer means anything.
+
 ### On-board battery protection (optional)
 
 The design targets packs with their own protection circuit, so the on-board protection is marked
@@ -93,19 +98,45 @@ The design targets packs with their own protection circuit, so the on-board prot
 | Protected pack (default) | R21 (0 Ω) | U2, Q3, R5, C7, R8 |
 | Bare cell, no protection | U2, Q3, R5, C7, R8 | **R21** (never fit both) |
 
+### Load switch soft start (optional)
+
+The slide switch turns Q5 on almost instantly, and the ~66 µF on the boost input and output charges
+in a short, high current pulse. Some pack protection circuits read that as a short and cut out.
+By default R25 = 0 Ω and C16 is DNP, so Q5 behaves as before. If the pack cuts out at switch-on:
+
+| | R25 | C16 (gate – VSW) |
+|---|---|---|
+| Default | 0 Ω | not fitted |
+| Soft start | 10 k | 100 nF |
+
+Soft start ramps VSW in about 2 ms. The trade-offs: turn-off also slows to roughly 20 ms (Q5 warms
+briefly if you switch off under heavy load), and Q5's gate drive drops to about 90 % of the
+battery voltage.
+
 ## Usage notes
 
 - Use a **5 V / 2 A or better** USB-C charger (3 A recommended). Charging at 1 A while the outputs
   are loaded needs up to ~2 A.
 - At 1 A on the 5 V rail the battery delivers up to ~2.2 A near empty. The pack's own protection
   must allow **≥ 2.5 A continuous discharge**.
-- The TP4056 dissipates ~1.3 W at 1 A, so give it a generous copper pour with thermal vias.
+- At 1 A the TP4056 dissipates ~1.3 W with a 3.7 V cell and up to ~2 W with a low (3.0 V) cell.
+  Give it a generous copper pour with thermal vias; when it gets hot, its thermal regulation
+  lowers the charge current.
+- F1's hold current drops as it warms up (roughly 20 % lower at 50 °C). A sustained 1 A load in a
+  warm enclosure can trip it; use a higher-rated PTC if that matters.
 - To change the charge current, change R9 (PROG): 1.2 k ≈ 1 A, 2 k ≈ 580 mA, 3 k ≈ 400 mA.
 - The MAX17048 runs from the battery all the time (~3 µA). With the power switch off the I²C
   pull-ups lose power, the bus sits low and the gauge enters sleep after 2.5 s (~0.5 µA). It does
   not track charge while asleep, so after charging with the switch off the reported % catches up
   over the next minutes.
 - Do not enable the MCU's internal pull-ups on ~CHRG / ~STDBY; the board already has them.
+- With USB plugged in and the switch off, ~CHRG / ~STDBY sit at ~3 V and can feed an unpowered MCU
+  through its pin protection diodes (well under 1 mA, via 15 k).
+- BAT_TEMP is proportional to VBUS, so charger voltage tolerance (±5 %) shows up as a few °C of
+  error. Its source impedance is high (~60 k); use a long ADC sampling time.
+- With USB unplugged Q1 is always on, so D2's (SS34) reverse leakage drains the battery even with
+  the switch off: µA at room temperature, much more when hot. Measure the off current on the
+  first board.
 - Firmware should shut the system down at about 3.3 V cell voltage (read from the MAX17048). The
   battery's own cutoff is much lower and repeated deep discharge ages the cell.
 

@@ -12325,17 +12325,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 127)
-			(xy 96.52 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ada382a1-9067-4747-8ff0-f4f496e84346")
-	)
-	(wire
-		(pts
 			(xy 96.52 127)
 			(xy 96.52 121.92)
 		)
@@ -20759,6 +20748,492 @@
 			(type default)
 		)
 		(uuid "179884ef-30a3-4c87-b8ec-9ea2b72eba41")
+	)
+	(symbol
+		(lib_id "LCSC:0603WAF1002T5E")
+		(at 391.16 172.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "3c485daf-0d6b-490d-9206-0cd86df91055")
+		(property "Reference" "R24"
+			(at 393.7 171.45 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 393.7 173.99 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LCSC:R0603"
+			(at 398.78 172.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_10KR-1002-1_C25804.html"
+			(at 401.32 172.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10KΩ (1002) ±1%"
+			(at 391.16 172.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 403.86 172.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 406.4 172.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C25804"
+			(at 408.94 172.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "20a731f1-929e-49e2-baa3-56171531fb12")
+		)
+		(pin "2"
+			(uuid "0bfa5006-28ec-41ea-908e-1c885ee0d3a4")
+		)
+		(instances
+			(project "battery-charger"
+				(path "/57678231-ac69-4450-a755-f93ff8b980dd"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "NTC"
+		(at 391.16 167.64 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "412195fc-c34d-49ec-b472-f9929fcb1d4d")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 391.16 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "cf858ade-8205-488b-993c-85b50c769ee1")
+		(property "Reference" "#PWR60"
+			(at 391.16 186.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 391.16 184.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 391.16 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 391.16 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 391.16 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "59961bc5-7a72-461b-aa95-a9252a8b53ae")
+		)
+		(instances
+			(project "battery-charger"
+				(path "/57678231-ac69-4450-a755-f93ff8b980dd"
+					(reference "#PWR60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 391.16 177.8)
+			(xy 391.16 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3ecceec-4aeb-44e7-b244-1712205fc006")
+	)
+	(text "R24 (DNP): NTC'siz pil\nkullanılırsa takılır"
+		(exclude_from_sim no)
+		(at 363.22 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+				(color 90 90 90 1)
+			)
+			(justify left top)
+		)
+		(uuid "9a084d04-23c8-483e-8e14-b6c277649925")
+	)
+	(symbol
+		(lib_id "LCSC:0603WAF0000T5E")
+		(at 91.44 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "92077749-1bc3-4f80-a9cb-5fa3e1c0ddae")
+		(property "Reference" "R25"
+			(at 88.9 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 93.98 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LCSC:R0603"
+			(at 99.06 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_0R-0R0-1_C21189.html"
+			(at 101.6 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0Ω (0R0) ±1%"
+			(at 91.44 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 104.14 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF0000T5E"
+			(at 106.68 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C21189"
+			(at 109.22 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d68fa709-a77e-44ed-8715-13f72e081a7f")
+		)
+		(pin "2"
+			(uuid "ecdede95-8b7d-4088-b6f2-e7c3e67a3afa")
+		)
+		(instances
+			(project "battery-charger"
+				(path "/57678231-ac69-4450-a755-f93ff8b980dd"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "Q5_G"
+		(at 78.74 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "34614cc4-fa3d-4036-aae5-b0d6f0d2b35a")
+	)
+	(symbol
+		(lib_id "LCSC:CL10B104KB8NNNC")
+		(at 127 152.4 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "2235fdd4-e1ac-44f2-8eec-b93cd6b8b54f")
+		(property "Reference" "C16"
+			(at 129.54 151.13 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100nF"
+			(at 129.54 153.67 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LCSC:C0603"
+			(at 134.62 152.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10B104KB8NNNC_100nF-104-10-50V_C1591.html"
+			(at 137.16 152.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF (104) ±10% 50V"
+			(at 127 152.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "SAMSUNG"
+			(at 139.7 152.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10B104KB8NNNC"
+			(at 142.24 152.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C1591"
+			(at 144.78 152.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aae52676-e607-4284-9a94-32f5b571e101")
+		)
+		(pin "2"
+			(uuid "f23b21d3-7c82-4e13-89a2-249fab722ae4")
+		)
+		(instances
+			(project "battery-charger"
+				(path "/57678231-ac69-4450-a755-f93ff8b980dd"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "VSW"
+		(at 127 147.32 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "888baaa9-b1f2-4649-b5ce-a77f706c134b")
+	)
+	(label "Q5_G"
+		(at 127 157.48 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right top)
+		)
+		(uuid "c24c56f9-99d5-4ea0-87d5-6bdd2583792e")
+	)
+	(text "Pil koruması açılışta kesiyorsa (ani akım):\nR25 = 10k, C16 takılır → ~2 ms yumuşak açılış"
+		(exclude_from_sim no)
+		(at 86.36 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+				(color 90 90 90 1)
+			)
+			(justify left top)
+		)
+		(uuid "369c130f-7c29-4f0a-a2a7-2958a3f03e45")
 	)
 	(sheet_instances
 		(path "/"

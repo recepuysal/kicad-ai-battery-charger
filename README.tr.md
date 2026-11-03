@@ -9,8 +9,10 @@
 
 ![Şema](docs/schematic.png)
 
-> **Durum:** Şema tamamlandı. ERC temiz ve tüm bağlantılar referans tasarımla otomatik olarak
-> karşılaştırıldı. PCB çizimine henüz başlanmadı ve **tasarım henüz donanım üzerinde test edilmedi**.
+> **Durum:** Şema tamamlandı. ERC temiz ve tüm bağlantılar hedeflenen bağlantı listesiyle
+> ([`scripts/verify_netlist.py`](scripts/verify_netlist.py)) otomatik olarak karşılaştırıldı. Bu
+> kontrol şemanın amaca uygun çizildiğini gösterir, amacın kendisinin doğru olduğunu kanıtlamaz.
+> PCB çizimine henüz başlanmadı ve **tasarım henüz donanım üzerinde test edilmedi**.
 
 ## Proje hakkında
 
@@ -80,6 +82,10 @@ olmadığını da söyler:
 `1 = BAT+`, `2 = NTC (10 k, B3435)`, `3 = BAT−`. Pin sırası pil paketine göre değişir;
 **takmadan önce kendi pilinizle karşılaştırın.**
 
+**NTC'siz pil (2 kablolu):** R24'ü (10 k, varsayılan olarak takılmaz) takın. Takılmazsa TP4056'nın
+TEMP pini VBUS'a çekilir, bunu sıcaklık hatası sayar ve **şarj hiç başlamaz**. R24 takılınca
+sıcaklık kesmesi devre dışı kalır ve BAT_TEMP anlamsızlaşır.
+
 ### Kart üstü pil koruması (opsiyonel)
 
 Tasarım kendi koruma devresi olan (devreli) piller için yapıldı. Kart üstündeki koruma **DNP**
@@ -90,19 +96,42 @@ Tasarım kendi koruma devresi olan (devreli) piller için yapıldı. Kart üstü
 | Korumalı pil (varsayılan) | R21 (0 Ω) | U2, Q3, R5, C7, R8 |
 | Korumasız çıplak hücre | U2, Q3, R5, C7, R8 | **R21** (ikisi asla birlikte takılmaz) |
 
+### Yük anahtarı yumuşak açılış (opsiyonel)
+
+Sürgü anahtar Q5'i neredeyse anında açar. Boost giriş ve çıkışındaki ~66 µF kısa ve yüksek bir akım
+darbesiyle dolar. Bazı pil koruma devreleri bunu kısa devre sanıp keser. Varsayılan olarak
+R25 = 0 Ω ve C16 takılmaz, yani Q5 eskisi gibi çalışır. Pil açılışta kesiyorsa:
+
+| | R25 | C16 (kapı – VSW) |
+|---|---|---|
+| Varsayılan | 0 Ω | takılmaz |
+| Yumuşak açılış | 10 k | 100 nF |
+
+Yumuşak açılışta VSW yaklaşık 2 ms'de yükselir. Bedeli: kapanış da ~20 ms'ye uzar (ağır yük
+altında kapatırken Q5 kısa süre ısınır) ve Q5'in kapı gerilimi pil geriliminin ~%90'ına düşer.
+
 ## Kullanım notları
 
 - En az **5 V / 2 A** USB-C şarj aleti kullanın (3 A önerilir). Çıkışlar yükteyken 1 A şarj
   ~2 A'e kadar çekebilir.
 - 5 V hattından 1 A çekilirken pil boşalmaya yakınken ~2.2 A verir. Pilin kendi koruması
   **≥ 2.5 A sürekli deşarja** izin vermelidir.
-- TP4056 1 A'de ~1.3 W ısı yayar; altına geniş bakır alan ve ısı viaları koyun.
+- TP4056 1 A'de, pil 3.7 V'tayken ~1.3 W, pil boşken (3.0 V) ~2 W'a kadar ısı yayar. Altına geniş
+  bakır alan ve ısı viaları koyun; ısınınca kendi ısıl regülasyonu şarj akımını düşürür.
+- F1'in tutma akımı ısındıkça düşer (50 °C'de ~%20 daha az). Sıcak bir kutuda sürekli 1 A
+  çekilirse atabilir; bu önemliyse daha yüksek değerli bir PTC kullanın.
 - Şarj akımını değiştirmek için R9 (PROG) değiştirilir: 1.2 k ≈ 1 A, 2 k ≈ 580 mA, 3 k ≈ 400 mA.
 - MAX17048 sürekli pilden beslenir (~3 µA). Güç anahtarı kapalıyken I²C çekme dirençlerinin
   beslemesi kesilir, hat 0'da kalır ve entegre 2.5 s sonra uykuya geçer (~0.5 µA). Uykudayken
   şarjı takip etmez; anahtar kapalıyken şarj edildiyse yüzde değeri açıldıktan sonraki
   dakikalarda kendini düzeltir.
 - ~CHRG / ~STDBY için işlemcinin dahili çekme dirençlerini açmayın; kartta zaten var.
+- USB takılı ve anahtar kapalıyken ~CHRG / ~STDBY ~3 V'ta kalır ve beslemesiz işlemciyi pin koruma
+  diyotları üzerinden besleyebilir (15 k üzerinden, 1 mA'in çok altında).
+- BAT_TEMP, VBUS ile orantılıdır; şarj aletinin ±%5 gerilim toleransı birkaç °C hata olarak
+  yansır. Çıkış empedansı yüksektir (~60 k); ADC örnekleme süresini uzun tutun.
+- USB takılı değilken Q1 hep iletimdedir; D2'nin (SS34) ters sızıntısı anahtar kapalıyken de pili
+  boşaltır: oda sıcaklığında µA'ler, sıcakta çok daha fazla. İlk kartta kapalı akımını ölçün.
 - Yazılım, hücre gerilimi ~3.3 V'a düştüğünde (MAX17048'den okunur) sistemi kapatmalıdır. Pilin
   kendi kesmesi çok daha düşüktür ve sık derin deşarj pili yıpratır.
 
